@@ -1,0 +1,7 @@
+D:\工作\一起学会计微信公众号\项目源码\TestApplication\bin\Debug\TestApplication.exe
+D:\工作\一起学会计微信公众号\项目源码\TestApplication\bin\Debug\TestApplication.pdb
+D:\工作\一起学会计微信公众号\项目源码\TestApplication\obj\x86\Debug\TestApplication.Form1.resources
+D:\工作\一起学会计微信公众号\项目源码\TestApplication\obj\x86\Debug\TestApplication.Properties.Resources.resources
+D:\工作\一起学会计微信公众号\项目源码\TestApplication\obj\x86\Debug\TestApplication.csproj.GenerateResource.Cache
+D:\工作\一起学会计微信公众号\项目源码\TestApplication\obj\x86\Debug\TestApplication.exe
+D:\工作\一起学会计微信公众号\项目源码\TestApplication\obj\x86\Debug\TestApplication.pdb

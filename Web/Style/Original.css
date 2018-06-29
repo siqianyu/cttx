@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.AnaBox{width:100%;}
+.AnaBoxT{width:100%;background:url(../Images/AnaBg.png) top repeat-x;height:35px;}
+.AnaBoxT .SlideBox{width:300px;}
+.AnaBoxT .SlideBox a{float:left;margin:0 4px 0 0;line-height:29px;font-weight:bold;padding:0 0 6px 0;text-align:center}
+
+.AnaBoxT .SlideBox .AnaAct{width:104px;background:url(../Images/Slide.png) left no-repeat;color:#0078a5}
+.AnaBoxT .SlideBox .AnaNor{width:104px;background:url(../Images/Slide.png) -138px no-repeat;color:#7a7a7a}
+
+.OpertBox{float:right;text-align:right;padding:3px 10px 0 0;line-height:20px;}
+.OpertBox a{padding:0 10px;background:url(../Images/DeleBgN.png) repeat-x;border:1px solid #a5d9f4;height:20px;float:right;margin:0 0 0 3px}
+.OpertBox a:hover{background:url(../Images/DeleBgA.png) repeat-x;}
+
+.TaskInfo{width:100%;margin:5px 0 10px 0;background:#dcdddd;line-height:200%;float:left}
+.TaskInfo td{padding:5px;background:#f8f8f8;color:#797979}
+.TaskInfo .Ltd{font-weight:bold}
+
+.TaskInfo select{width:70%;height:22px;color:#666}
+.TaskInfo span{padding:0 5px;}
+
+.TaskEnter{line-height:22px;width:70%;height:22px;color:#666;padding:0 0 0 5px;border:1px solid #aaa}
+
+.AnaItem{width:100%;margin:8px 0 0 0;background:#a5d6f3;line-height:200%;text-align:center;}
+.AnaItem td{background:#fff;padding:5px;color:#626262}
+.AnaItem .AnaItemTtr{font-weight:bold}
+.AnaItem .AnaItemTtr td{background:#ddf2ff;color:#1d67a5}
+
+.AnaItem .AnaItemTtr:hover td{background:#ddf2ff}
+.AnaItem tr:hover td{background:#f9fdff}
+
+.AnaItem .TaskEnter{width:50%;border:#ddd 1px solid;text-align:center}
+.AnaItem a{color:#0097de}
+.AnaItem a:hover{text-decoration:underline}

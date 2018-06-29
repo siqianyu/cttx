@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25B00052-E056-4023-8BBE-466F2757047A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StarTech.ELife</RootNamespace>
+    <AssemblyName>StarTech.ELife</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="StarTech.DBUtility">
+      <HintPath>..\Web\Bin\StarTech.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ad\AdBll.cs" />
+    <Compile Include="Ad\AdDal.cs" />
+    <Compile Include="Ad\AdModel.cs" />
+    <Compile Include="Article\ArticleBll.cs" />
+    <Compile Include="Article\ArticleDal.cs" />
+    <Compile Include="Article\ArticleModel.cs" />
+    <Compile Include="Base\AreaBll.cs" />
+    <Compile Include="Base\AreaDal.cs" />
+    <Compile Include="Base\AreaModel.cs" />
+    <Compile Include="Base\BuildingBll.cs" />
+    <Compile Include="Base\BuildingDal.cs" />
+    <Compile Include="Base\BuildingModel.cs" />
+    <Compile Include="Base\BuildingToMarketBll.cs" />
+    <Compile Include="Base\BuildingToMarketDal.cs" />
+    <Compile Include="Base\BuildingToMarketModel.cs" />
+    <Compile Include="Base\GoodsBll.cs" />
+    <Compile Include="Base\GoodsDal.cs" />
+    <Compile Include="Base\GoodsModel.cs" />
+    <Compile Include="Base\Goods_ServiceDetailBll.cs" />
+    <Compile Include="Base\Goods_ServiceDetailDal.cs" />
+    <Compile Include="Base\Goods_ServiceDetailModel.cs" />
+    <Compile Include="Base\MarketBll.cs" />
+    <Compile Include="Base\MarketDal.cs" />
+    <Compile Include="Base\MarketModel.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Goods\MorePropertyConfigSetBll.cs" />
+    <Compile Include="Goods\MorePropertyConfigSetDal.cs" />
+    <Compile Include="Goods\GoodsBll.cs" />
+    <Compile Include="Goods\GoodsDal.cs" />
+    <Compile Include="Goods\GoodsFormateBll.cs" />
+    <Compile Include="Goods\GoodsFormateDal.cs" />
+    <Compile Include="Goods\GoodsFormateModel.cs" />
+    <Compile Include="Goods\GoodsModel.cs" />
+    <Compile Include="Goods\GoodsTypeBll.cs" />
+    <Compile Include="Goods\GoodsTypeDal.cs" />
+    <Compile Include="Goods\GoodsTypeModel.cs" />
+    <Compile Include="Goods\MorePropertyConfigSetModel.cs" />
+    <Compile Include="Goods\ShopGoodsBll.cs" />
+    <Compile Include="Goods\ShopGoodsDal.cs" />
+    <Compile Include="Goods\ShopGoodsModel.cs" />
+    <Compile Include="IdCreator.cs" />
+    <Compile Include="Menu\MenuTypeBll.cs" />
+    <Compile Include="Menu\MenuTypeDal.cs" />
+    <Compile Include="Menu\MenuTypeModel.cs" />
+    <Compile Include="Menu\MenuBll.cs" />
+    <Compile Include="Menu\MenuDal.cs" />
+    <Compile Include="Menu\MenuModel.cs" />
+    <Compile Include="News\NewsBll.cs" />
+    <Compile Include="News\NewsDal.cs" />
+    <Compile Include="News\NewsModel.cs" />
+    <Compile Include="Order\BllOrder.cs" />
+    <Compile Include="Order\BllTableObject.cs" />
+    <Compile Include="Order\DalOrder.cs" />
+    <Compile Include="Order\ModOrder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question\BllTestday.cs" />
+    <Compile Include="Question\BllTestQueston.cs" />
+    <Compile Include="Question\DalTestday.cs" />
+    <Compile Include="Question\DalTestQueston.cs" />
+    <Compile Include="Question\DalTestQuestonAnswer.cs" />
+    <Compile Include="Question\ModelTestday.cs" />
+    <Compile Include="Question\ModelTestQueston.cs" />
+    <Compile Include="Question\ModelTestQuestonAnswer.cs" />
+    <Compile Include="ZXTS\TsBll.cs" />
+    <Compile Include="ZXTS\TsDal.cs" />
+    <Compile Include="ZXTS\TsModel.cs" />
+    <Compile Include="ZXTS\ZxBll.cs" />
+    <Compile Include="ZXTS\ZxDal.cs" />
+    <Compile Include="ZXTS\ZxModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Startech.Category\Startech.Category.csproj">
+      <Project>{9DA3558C-73A1-4747-B506-22AF611A9EBE}</Project>
+      <Name>Startech.Category</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Startech.Utils\Startech.Utils.csproj">
+      <Project>{49E33D67-8233-4B2A-B61A-168E57457364}</Project>
+      <Name>Startech.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StarTech.Util\StarTech.Util.csproj">
+      <Project>{26D05864-A718-47A5-920E-8B2318B110D6}</Project>
+      <Name>StarTech.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{width:100%;text-align:center;margin:0 auto;font-family:"宋体";font-size:12px;}
+*{margin:0;padding:0}
+a{text-decoration:none}
+.RecordTit {
+	line-height:35px;
+	background:url(../Images/PosiBg.png) top repeat-x #e7f9ff;
+	color:#1d67a5;
+	width:100%;
+	font-weight:bold;
+	font-size:14px;
+	text-shadow:0 1px #f7fcff;
+	float:left;
+	border:1px solid #a2c8e0;
+	text-align: center;
+}
+.RecordT { border:1px solid #cde3f1; margin:10px 0 0 0; float:left; background:#f7fbfd; padding:2px 0;
+}
+.RecordT p {
+	float:left;
+	display:inline-block;
+	padding:2px 5px;
+}
+
+.RecordT input{ height:20px; border:1px solid #bbd5e7; line-height:20px; padding:0 0 0 5px; color:#666; margin:4px; float:left;
+}
+.RecordT .ItemName{ padding:2px 5px; color:#4f7ea6; font-weight:bold; line-height:26px; float:left;
+}
+.RecordT .ItemData { border-bottom:1px solid #666; line-height:25px; float:left; text-align:left; margin:2px; color:#666;
+}
+.RecordT .EnterS { width:50px;
+}
+.RecordT .EnterM { width:120px;
+}
+.RecordT .EnterL { width:200px;
+}
+.RecordT .EnterXL { width:300px;
+}
+.RecordT .EnterXLL { width:450px;
+}
+.RecordBox{ float:left; width:100%; margin:10px 0;
+}
+.SampleTab{ width:100%; background:#b5d4e6; border:none; line-height:200%; float:left; color:#666;
+}
+.SampleTab .Ttr{}
+.SampleTab .Ttr td{
+	font-weight:bold;
+	padding:2px 5px;
+	color:#1c4471;
+	background:#eff7fd;
+}
+.SampleTab td{
+	padding:5px 3px;
+	background:#fff;
+}
+.Formula{ width:100%; background:#aaa; border:none; line-height:150%; color:#666; margin:10px 0 0 0; float:left;
+}
+.Formula td{ background:#f9f9f9; padding:5px 0;
+}
+.Formula .footer{ width:450px;
+}
+.Formula input{ height:20px; border:1px solid #bbd5e7; line-height:20px; padding:0 0 0 5px; color:#666; margin:4px; float:left;
+}
+
+.RecordBut{ width:100%; height:32px; float:left; padding:4px 0; float:left; background:#eaf5f5;
+}
+.ButBox p{margin: 0 auto;width:300px}
+.ButBox a{
+	width:135px;
+	text-align:center;
+	line-height:32px;
+	font-size:14px;
+	font-weight:bold;
+	margin:0 5px;
+	float:left;4
+}
+.ButBox .Submit{ color:#ab0b0b; text-shadow:0 1px #ffe8bb; background:url(../Images/SubmitN.png);
+}
+.ButBox .Submit:hover{
+	background:url(../Images/SubmitA.png);	
+}
+.ButBox .Return{ color:#777; text-shadow:0 1px #fff; background:url(../Images/ReturnN.png);
+}
+.ButBox .Return:hover{
+	background:url(../Images/ReturnA.png);
+}
+.RecordBox .SampleTab .Ttr .Ttr1 {
+	text-align: left;
+}
+.RecordBox .SampleTab tr .Ttr2 {font-weight:bold;
+	padding:2px 5px;
+	color:#1c4471;
+	background:#eff7fd;
+	text-align: left;
+}
+
+.Formula.RecordT tr td p .text { padding:2px 5px; line-height:26px; float:left;
+}
+.Formula.RecordT tr td .pic { background: url(../Images/23.jpg);padding:2px 5px; line-height:26px; float:left; background-repeat:no-repeat; margin:20px 0 0 -10px;
+}
+
+
+.Formula.RecordT .border td p .EnterS1 {width:50px;
+}
+.Formula.RecordT .border td p .EnterS2 {width:50px; margin:40px 0 0 -70px ;
+}
+.Formula.RecordT { padding:0 0 0 0;
+}
+
+.Formula.RecordT .border td .EnterS3 {width:50px; margin:20px 0 0 5px;
+}
+
+
+
+.Formula.RecordT .border td p .EnterS4 {width:50px; margin:0 -15px 41px 0;
+}

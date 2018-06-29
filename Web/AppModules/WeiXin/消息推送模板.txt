@@ -1,0 +1,11 @@
+﻿任务标题:{{var1.DATA}} 任务详情:{{var2.DATA}} 任务时间:{{var3.DATA}} {{var4.DATA}}
+
+ string temp = "{\"touser\": \"" + touser + "\"," +
+                      "\"template_id\": \"" + template_id + "\", " +
+                      "\"topcolor\": \"#FF0000\", " +
+                      "\"url\":\"http://www.yiqixkj.com/NGWeiXinRoot/YqxkjNewTask.aspx\"," +
+                      "\"data\": " +
+                      "{\"var1\": {\"value\": \"" + var1 + "\",\"color\":\"#173177\"}," +
+                      "\"var2\": { \"value\": \"" + var2 + "\",\"color\":\"#173177\"}," +
+                      "\"var3\": { \"value\": \"" + DateTime.Now + "\",\"color\":\"#173177\"}," +
+                      "\"var4\": {\"value\": \"请任务完成任务！\",\"color\":\"#FF0000\"}}}";

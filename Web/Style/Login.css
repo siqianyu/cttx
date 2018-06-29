@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{width:1024px;height:728px;background:url(../Images/LoginBg.jpg) top no-repeat #fdfdfd;font-family:"微软雅黑","Micro Yahei";}
+
+.Enter{height:33px;background:#fff;border:1px solid #69aadd;padding:0 0 0 5px;line-height:33px;color:#000;font-size:14px;float:left}
+.Enter:focus{border:1px solid #e4bc00;}
+
+.LoginBox{padding:262px 0 0 610px;float:left;width:370px;}
+.LoginBox p{width:370px;height:35px;padding:13px 0;float:left;}
+.LoginBox p span{padding:0 0 0 10px;float:left;color:#000;font-size:16px;line-height:35px;width:80px;text-align:right}
+.LoginBox p input{width:200px;font-family:"微软雅黑","Micro Yahei";}
+.LoginBox p .CheckCode{padding:7px 0 0 10px;float:left}
+
+.LoginBox .Remember{height:18px;overflow:hidden;line-height:18px;width:300px;padding:10px 0 10px 70px;float:left}
+.LoginBox .Remember input{float:left;padding:4px 0 0}
+.LoginBox .Remember span{text-align:left;float:left;color:#333;font-size:14px;padding:0 0 0 10px;}
+
+.LoginBar{width:300px;padding:25px 0 0 70px;height:40px;}
+.LoginBar a{width:93px;height:40px;margin:0 16px 0 0;float:left}
+.LoginBar .LoginBut{background:url(../Images/LoginN.png);}
+.LoginBar .LoginBut:hover{background:url(../Images/LoginA.png);}
+.LoginBar .CancelBut{background:url(../Images/CancelN.png);}
+.LoginBar .CancelBut:hover{background:url(../Images/CancelA.png);}

@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="stdUpdateinsertSUZHOU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XGJList" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateinsertSUZHOUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdUpdateinsertSUZHOUResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticationHeader" type="tns:AuthenticationHeader" />
+      <s:complexType name="AuthenticationHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="stdAllUpdateInfowithPagesizeSUZHOU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="begindt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDT" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Start" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="BZHs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdAllUpdateInfowithPagesizeSUZHOUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdAllUpdateInfowithPagesizeSUZHOUResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateinsert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XGJList" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateinsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdUpdateinsertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateinsertBZH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BZH" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateinsertBZHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdUpdateinsertBZHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateinsertBZHrtnDs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BZH" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateinsertBZHrtnDsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdUpdateinsertBZHrtnDsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateDelte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BZH" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateDelteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdUpdateDelteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateDelteWithXGJ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XGJList" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateDelteWithXGJResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdUpdateDelteWithXGJResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdUpdateDelteWithstdNOamdlists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdNOamdlists" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="stdUpdateDelteWithstdNOamdlistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdUpdateDelteWithstdNOamdlistsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdAllUpdateInfowithPagesize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newkey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="begindt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDT" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Start" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="BZHs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdAllUpdateInfowithPagesizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdAllUpdateInfowithPagesizeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdAllUpdateInfoWithBZHAmdList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newkey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="begindt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDT" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Start" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="BZHAmdList" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdAllUpdateInfoWithBZHAmdListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdAllUpdateInfoWithBZHAmdListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdAllUpdateStdwithPagesize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="begindt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDT" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="resourcetype" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Start" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="BZHs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdAllUpdateStdwithPagesizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdAllUpdateStdwithPagesizeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdInfos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ids" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdInfosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdInfosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdLibNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdLibNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdLibNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdLib">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdLibResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdLibResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithSearchs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdTNGJZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdNDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZGBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdGJBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZFL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZXGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBHZFBZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdSiteID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdsearches" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithSearchsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdListProWithSearchsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithSearchsJP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdTNGJZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdNDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZGBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdGJBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZFL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZXGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBHZFBZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdSiteID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdsearches" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithSearchsJPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdListProWithSearchsJPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListPro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdTNGJZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdNDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZGBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdGJBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZFL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZXGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBHZFBZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdListProResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProwithbbhgzj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdTNGJZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBBHGJZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdNDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZGBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdGJBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZFL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZXGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBHZFBZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PageSize" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProwithbbhgzjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdListProwithbbhgzjResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithpageCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdTNGJZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdNDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZGBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdGJBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZFL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZXGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBHZFBZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZT" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithpageCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdListProWithpageCountResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithsize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdTNGJZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdNDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZGBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdGJBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZFL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZXGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBHZFBZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdSiteID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithsizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdListProWithsizeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithsizelz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdTNGJZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdNDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZGBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdGJBZFLH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYBZZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZXZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZZFL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdZXGX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBHZFBZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdBZZT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stdSiteID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdListProWithsizelzResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdListProWithsizelzResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdGroup">
+        <s:complexType />
+      </s:element>
+      <s:element name="stdGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdGroupResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdBCYGroup">
+        <s:complexType />
+      </s:element>
+      <s:element name="stdBCYGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdBCYGroupResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdFLCHN">
+        <s:complexType />
+      </s:element>
+      <s:element name="stdFLCHNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdFLCHNResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdFLCHNSep">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdFLCHNSepResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdFLCHNSepResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdFLICS">
+        <s:complexType />
+      </s:element>
+      <s:element name="stdFLICSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdFLICSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdFLICSSep">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stdFLICSSepResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdFLICSSepResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="stdUpdateinsertSUZHOUSoapIn">
+    <wsdl:part name="parameters" element="tns:stdUpdateinsertSUZHOU" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertSUZHOUSoapOut">
+    <wsdl:part name="parameters" element="tns:stdUpdateinsertSUZHOUResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertSUZHOUAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfowithPagesizeSUZHOUSoapIn">
+    <wsdl:part name="parameters" element="tns:stdAllUpdateInfowithPagesizeSUZHOU" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfowithPagesizeSUZHOUSoapOut">
+    <wsdl:part name="parameters" element="tns:stdAllUpdateInfowithPagesizeSUZHOUResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfowithPagesizeSUZHOUAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertSoapIn">
+    <wsdl:part name="parameters" element="tns:stdUpdateinsert" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertSoapOut">
+    <wsdl:part name="parameters" element="tns:stdUpdateinsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertBZHSoapIn">
+    <wsdl:part name="parameters" element="tns:stdUpdateinsertBZH" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertBZHSoapOut">
+    <wsdl:part name="parameters" element="tns:stdUpdateinsertBZHResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertBZHAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertBZHrtnDsSoapIn">
+    <wsdl:part name="parameters" element="tns:stdUpdateinsertBZHrtnDs" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertBZHrtnDsSoapOut">
+    <wsdl:part name="parameters" element="tns:stdUpdateinsertBZHrtnDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateinsertBZHrtnDsAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteSoapIn">
+    <wsdl:part name="parameters" element="tns:stdUpdateDelte" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteSoapOut">
+    <wsdl:part name="parameters" element="tns:stdUpdateDelteResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteWithXGJSoapIn">
+    <wsdl:part name="parameters" element="tns:stdUpdateDelteWithXGJ" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteWithXGJSoapOut">
+    <wsdl:part name="parameters" element="tns:stdUpdateDelteWithXGJResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteWithXGJAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteWithstdNOamdlistsSoapIn">
+    <wsdl:part name="parameters" element="tns:stdUpdateDelteWithstdNOamdlists" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteWithstdNOamdlistsSoapOut">
+    <wsdl:part name="parameters" element="tns:stdUpdateDelteWithstdNOamdlistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdUpdateDelteWithstdNOamdlistsAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfowithPagesizeSoapIn">
+    <wsdl:part name="parameters" element="tns:stdAllUpdateInfowithPagesize" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfowithPagesizeSoapOut">
+    <wsdl:part name="parameters" element="tns:stdAllUpdateInfowithPagesizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfowithPagesizeAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfoWithBZHAmdListSoapIn">
+    <wsdl:part name="parameters" element="tns:stdAllUpdateInfoWithBZHAmdList" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfoWithBZHAmdListSoapOut">
+    <wsdl:part name="parameters" element="tns:stdAllUpdateInfoWithBZHAmdListResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateInfoWithBZHAmdListAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateStdwithPagesizeSoapIn">
+    <wsdl:part name="parameters" element="tns:stdAllUpdateStdwithPagesize" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateStdwithPagesizeSoapOut">
+    <wsdl:part name="parameters" element="tns:stdAllUpdateStdwithPagesizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdAllUpdateStdwithPagesizeAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:stdInfo" />
+  </wsdl:message>
+  <wsdl:message name="stdInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:stdInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdInfoAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdInfosSoapIn">
+    <wsdl:part name="parameters" element="tns:stdInfos" />
+  </wsdl:message>
+  <wsdl:message name="stdInfosSoapOut">
+    <wsdl:part name="parameters" element="tns:stdInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdInfosAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdLibNewSoapIn">
+    <wsdl:part name="parameters" element="tns:stdLibNew" />
+  </wsdl:message>
+  <wsdl:message name="stdLibNewSoapOut">
+    <wsdl:part name="parameters" element="tns:stdLibNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdLibNewAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdLibSoapIn">
+    <wsdl:part name="parameters" element="tns:stdLib" />
+  </wsdl:message>
+  <wsdl:message name="stdLibSoapOut">
+    <wsdl:part name="parameters" element="tns:stdLibResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdLibAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithSearchsSoapIn">
+    <wsdl:part name="parameters" element="tns:stdListProWithSearchs" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithSearchsSoapOut">
+    <wsdl:part name="parameters" element="tns:stdListProWithSearchsResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithSearchsAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithSearchsJPSoapIn">
+    <wsdl:part name="parameters" element="tns:stdListProWithSearchsJP" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithSearchsJPSoapOut">
+    <wsdl:part name="parameters" element="tns:stdListProWithSearchsJPResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithSearchsJPAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdListProSoapIn">
+    <wsdl:part name="parameters" element="tns:stdListPro" />
+  </wsdl:message>
+  <wsdl:message name="stdListProSoapOut">
+    <wsdl:part name="parameters" element="tns:stdListProResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdListProAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdListProwithbbhgzjSoapIn">
+    <wsdl:part name="parameters" element="tns:stdListProwithbbhgzj" />
+  </wsdl:message>
+  <wsdl:message name="stdListProwithbbhgzjSoapOut">
+    <wsdl:part name="parameters" element="tns:stdListProwithbbhgzjResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdListProwithbbhgzjAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithpageCountSoapIn">
+    <wsdl:part name="parameters" element="tns:stdListProWithpageCount" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithpageCountSoapOut">
+    <wsdl:part name="parameters" element="tns:stdListProWithpageCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithpageCountAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithsizeSoapIn">
+    <wsdl:part name="parameters" element="tns:stdListProWithsize" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithsizeSoapOut">
+    <wsdl:part name="parameters" element="tns:stdListProWithsizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithsizeAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithsizelzSoapIn">
+    <wsdl:part name="parameters" element="tns:stdListProWithsizelz" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithsizelzSoapOut">
+    <wsdl:part name="parameters" element="tns:stdListProWithsizelzResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdListProWithsizelzAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:stdGroup" />
+  </wsdl:message>
+  <wsdl:message name="stdGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:stdGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdGroupAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdBCYGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:stdBCYGroup" />
+  </wsdl:message>
+  <wsdl:message name="stdBCYGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:stdBCYGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdBCYGroupAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdFLCHNSoapIn">
+    <wsdl:part name="parameters" element="tns:stdFLCHN" />
+  </wsdl:message>
+  <wsdl:message name="stdFLCHNSoapOut">
+    <wsdl:part name="parameters" element="tns:stdFLCHNResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdFLCHNAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdFLCHNSepSoapIn">
+    <wsdl:part name="parameters" element="tns:stdFLCHNSep" />
+  </wsdl:message>
+  <wsdl:message name="stdFLCHNSepSoapOut">
+    <wsdl:part name="parameters" element="tns:stdFLCHNSepResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdFLCHNSepAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdFLICSSoapIn">
+    <wsdl:part name="parameters" element="tns:stdFLICS" />
+  </wsdl:message>
+  <wsdl:message name="stdFLICSSoapOut">
+    <wsdl:part name="parameters" element="tns:stdFLICSResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdFLICSAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="stdFLICSSepSoapIn">
+    <wsdl:part name="parameters" element="tns:stdFLICSSep" />
+  </wsdl:message>
+  <wsdl:message name="stdFLICSSepSoapOut">
+    <wsdl:part name="parameters" element="tns:stdFLICSSepResponse" />
+  </wsdl:message>
+  <wsdl:message name="stdFLICSSepAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:portType name="SearchControlSoap">
+    <wsdl:operation name="stdUpdateinsertSUZHOU">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回标准更新信息</documentation>
+      <wsdl:input message="tns:stdUpdateinsertSUZHOUSoapIn" />
+      <wsdl:output message="tns:stdUpdateinsertSUZHOUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdAllUpdateInfowithPagesizeSUZHOU">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回标准更新信息</documentation>
+      <wsdl:input message="tns:stdAllUpdateInfowithPagesizeSUZHOUSoapIn" />
+      <wsdl:output message="tns:stdAllUpdateInfowithPagesizeSUZHOUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateinsert">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">新增标准跟踪</documentation>
+      <wsdl:input message="tns:stdUpdateinsertSoapIn" />
+      <wsdl:output message="tns:stdUpdateinsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateinsertBZH">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">新增标准跟踪(只需要标准号)</documentation>
+      <wsdl:input message="tns:stdUpdateinsertBZHSoapIn" />
+      <wsdl:output message="tns:stdUpdateinsertBZHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateinsertBZHrtnDs">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">新增标准跟踪(只需要标准号)返回修改件列表</documentation>
+      <wsdl:input message="tns:stdUpdateinsertBZHrtnDsSoapIn" />
+      <wsdl:output message="tns:stdUpdateinsertBZHrtnDsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateDelte">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">删除标准跟踪</documentation>
+      <wsdl:input message="tns:stdUpdateDelteSoapIn" />
+      <wsdl:output message="tns:stdUpdateDelteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateDelteWithXGJ">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">删除标准跟踪</documentation>
+      <wsdl:input message="tns:stdUpdateDelteWithXGJSoapIn" />
+      <wsdl:output message="tns:stdUpdateDelteWithXGJSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateDelteWithstdNOamdlists">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">删除标准跟踪</documentation>
+      <wsdl:input message="tns:stdUpdateDelteWithstdNOamdlistsSoapIn" />
+      <wsdl:output message="tns:stdUpdateDelteWithstdNOamdlistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdAllUpdateInfowithPagesize">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回标准更新信息</documentation>
+      <wsdl:input message="tns:stdAllUpdateInfowithPagesizeSoapIn" />
+      <wsdl:output message="tns:stdAllUpdateInfowithPagesizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdAllUpdateInfoWithBZHAmdList">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回标准更新信息</documentation>
+      <wsdl:input message="tns:stdAllUpdateInfoWithBZHAmdListSoapIn" />
+      <wsdl:output message="tns:stdAllUpdateInfoWithBZHAmdListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdAllUpdateStdwithPagesize">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回标准更新设定信息</documentation>
+      <wsdl:input message="tns:stdAllUpdateStdwithPagesizeSoapIn" />
+      <wsdl:output message="tns:stdAllUpdateStdwithPagesizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdInfo">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回标准信息</documentation>
+      <wsdl:input message="tns:stdInfoSoapIn" />
+      <wsdl:output message="tns:stdInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdInfos">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回多个标准基本信息</documentation>
+      <wsdl:input message="tns:stdInfosSoapIn" />
+      <wsdl:output message="tns:stdInfosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdLibNew">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回标准信息完全匹配标准号</documentation>
+      <wsdl:input message="tns:stdLibNewSoapIn" />
+      <wsdl:output message="tns:stdLibNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdLib">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回标准信息</documentation>
+      <wsdl:input message="tns:stdLibSoapIn" />
+      <wsdl:output message="tns:stdLibSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithSearchs">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">专业版检索</documentation>
+      <wsdl:input message="tns:stdListProWithSearchsSoapIn" />
+      <wsdl:output message="tns:stdListProWithSearchsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithSearchsJP">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">专业版检索</documentation>
+      <wsdl:input message="tns:stdListProWithSearchsJPSoapIn" />
+      <wsdl:output message="tns:stdListProWithSearchsJPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdListPro">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">专业版检索</documentation>
+      <wsdl:input message="tns:stdListProSoapIn" />
+      <wsdl:output message="tns:stdListProSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdListProwithbbhgzj">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">专业版检索</documentation>
+      <wsdl:input message="tns:stdListProwithbbhgzjSoapIn" />
+      <wsdl:output message="tns:stdListProwithbbhgzjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithpageCount">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">专业版检索自定义pagesize</documentation>
+      <wsdl:input message="tns:stdListProWithpageCountSoapIn" />
+      <wsdl:output message="tns:stdListProWithpageCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithsize">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">专业版检索自定义包含站点过滤</documentation>
+      <wsdl:input message="tns:stdListProWithsizeSoapIn" />
+      <wsdl:output message="tns:stdListProWithsizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithsizelz">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">专业版检索自定义包含站点过滤返回标准组织</documentation>
+      <wsdl:input message="tns:stdListProWithsizelzSoapIn" />
+      <wsdl:output message="tns:stdListProWithsizelzSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdGroup">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">标准组织</documentation>
+      <wsdl:input message="tns:stdGroupSoapIn" />
+      <wsdl:output message="tns:stdGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdBCYGroup">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">被采用标准组织</documentation>
+      <wsdl:input message="tns:stdBCYGroupSoapIn" />
+      <wsdl:output message="tns:stdBCYGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdFLCHN">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">中国标准分类码</documentation>
+      <wsdl:input message="tns:stdFLCHNSoapIn" />
+      <wsdl:output message="tns:stdFLCHNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdFLCHNSep">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">中国标准分类码分级查询</documentation>
+      <wsdl:input message="tns:stdFLCHNSepSoapIn" />
+      <wsdl:output message="tns:stdFLCHNSepSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdFLICS">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">ICS国际分类号</documentation>
+      <wsdl:input message="tns:stdFLICSSoapIn" />
+      <wsdl:output message="tns:stdFLICSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stdFLICSSep">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">ICS国际分类号分级查询</documentation>
+      <wsdl:input message="tns:stdFLICSSepSoapIn" />
+      <wsdl:output message="tns:stdFLICSSepSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SearchControlSoap" type="tns:SearchControlSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="stdUpdateinsertSUZHOU">
+      <soap:operation soapAction="http://tempuri.org/stdUpdateinsertSUZHOU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdUpdateinsertSUZHOUAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdAllUpdateInfowithPagesizeSUZHOU">
+      <soap:operation soapAction="http://tempuri.org/stdAllUpdateInfowithPagesizeSUZHOU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdAllUpdateInfowithPagesizeSUZHOUAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateinsert">
+      <soap:operation soapAction="http://tempuri.org/stdUpdateinsert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdUpdateinsertAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateinsertBZH">
+      <soap:operation soapAction="http://tempuri.org/stdUpdateinsertBZH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdUpdateinsertBZHAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateinsertBZHrtnDs">
+      <soap:operation soapAction="http://tempuri.org/stdUpdateinsertBZHrtnDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdUpdateinsertBZHrtnDsAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateDelte">
+      <soap:operation soapAction="http://tempuri.org/stdUpdateDelte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdUpdateDelteAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateDelteWithXGJ">
+      <soap:operation soapAction="http://tempuri.org/stdUpdateDelteWithXGJ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdUpdateDelteWithXGJAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdUpdateDelteWithstdNOamdlists">
+      <soap:operation soapAction="http://tempuri.org/stdUpdateDelteWithstdNOamdlists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdUpdateDelteWithstdNOamdlistsAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdAllUpdateInfowithPagesize">
+      <soap:operation soapAction="http://tempuri.org/stdAllUpdateInfowithPagesize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdAllUpdateInfowithPagesizeAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdAllUpdateInfoWithBZHAmdList">
+      <soap:operation soapAction="http://tempuri.org/stdAllUpdateInfoWithBZHAmdList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdAllUpdateInfoWithBZHAmdListAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdAllUpdateStdwithPagesize">
+      <soap:operation soapAction="http://tempuri.org/stdAllUpdateStdwithPagesize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdAllUpdateStdwithPagesizeAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdInfo">
+      <soap:operation soapAction="http://tempuri.org/stdInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdInfos">
+      <soap:operation soapAction="http://tempuri.org/stdInfos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdInfosAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdLibNew">
+      <soap:operation soapAction="http://tempuri.org/stdLibNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdLibNewAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdLib">
+      <soap:operation soapAction="http://tempuri.org/stdLib" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdLibAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithSearchs">
+      <soap:operation soapAction="http://tempuri.org/stdListProWithSearchs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdListProWithSearchsAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithSearchsJP">
+      <soap:operation soapAction="http://tempuri.org/stdListProWithSearchsJP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdListProWithSearchsJPAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdListPro">
+      <soap:operation soapAction="http://tempuri.org/stdListPro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdListProAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdListProwithbbhgzj">
+      <soap:operation soapAction="http://tempuri.org/stdListProwithbbhgzj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdListProwithbbhgzjAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithpageCount">
+      <soap:operation soapAction="http://tempuri.org/stdListProWithpageCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdListProWithpageCountAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithsize">
+      <soap:operation soapAction="http://tempuri.org/stdListProWithsize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdListProWithsizeAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdListProWithsizelz">
+      <soap:operation soapAction="http://tempuri.org/stdListProWithsizelz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdListProWithsizelzAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdGroup">
+      <soap:operation soapAction="http://tempuri.org/stdGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdGroupAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdBCYGroup">
+      <soap:operation soapAction="http://tempuri.org/stdBCYGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdBCYGroupAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdFLCHN">
+      <soap:operation soapAction="http://tempuri.org/stdFLCHN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdFLCHNAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdFLCHNSep">
+      <soap:operation soapAction="http://tempuri.org/stdFLCHNSep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdFLCHNSepAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdFLICS">
+      <soap:operation soapAction="http://tempuri.org/stdFLICS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdFLICSAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stdFLICSSep">
+      <soap:operation soapAction="http://tempuri.org/stdFLICSSep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:stdFLICSSepAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SearchControl">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="SearchControlSoap" binding="tns:SearchControlSoap">
+      <soap:address location="http://www.standard.org.cn/standard2007/StandardService/SearchControl.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

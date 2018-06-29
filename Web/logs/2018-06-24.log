@@ -1,0 +1,2 @@
+2018-06-24 18:10:43.151 DEBUG NGAccessTokenTools: GetAccess_token response : {"errcode":40164,"errmsg":"invalid ip 58.100.94.221, not in whitelist hint: [Cby00422974]"}
+2018-06-24 18:11:59.681 DEBUG NGAccessTokenTools: GetAccess_token response : {"errcode":40013,"errmsg":"invalid appid hint: [ejd2tA01191512]"}

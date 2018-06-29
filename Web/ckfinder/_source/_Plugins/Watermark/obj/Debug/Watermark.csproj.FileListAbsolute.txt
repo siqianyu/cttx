@@ -1,0 +1,7 @@
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\Watermark\bin\Debug\CKFinder_Watermark.dll
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\Watermark\bin\Debug\CKFinder_Watermark.pdb
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\Watermark\bin\Debug\CKFinder.dll
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\Watermark\bin\Debug\CKFinder.pdb
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\Watermark\obj\Debug\ResolveAssemblyReference.cache
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\Watermark\obj\Debug\CKFinder_Watermark.dll
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\Watermark\obj\Debug\CKFinder_Watermark.pdb

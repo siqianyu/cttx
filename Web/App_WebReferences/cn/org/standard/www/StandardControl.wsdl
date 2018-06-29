@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="SelectGBNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="number" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectGBNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectGBNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticationHeader" type="tns:AuthenticationHeader" />
+      <s:complexType name="AuthenticationHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SelectGBNotIssue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="number" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectGBNotIssueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectGBNotIssueResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectISONew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="number" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectISONewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectISONewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectNotISOIssue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="number" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectNotISOIssueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectNotISOIssueResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="number" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectNotIssue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="number" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectNotIssueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectNotIssueResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLibInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="libID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLibInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectLibInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectStandardInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bzh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectStandardInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectStandardInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectStandardByA1074">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="number" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bzzz" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectStandardByA1074Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectStandardByA1074Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStdInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStdInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStdInfoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SelectGBNewSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectGBNew" />
+  </wsdl:message>
+  <wsdl:message name="SelectGBNewSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectGBNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectGBNewAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelectGBNotIssueSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectGBNotIssue" />
+  </wsdl:message>
+  <wsdl:message name="SelectGBNotIssueSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectGBNotIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectGBNotIssueAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelectISONewSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectISONew" />
+  </wsdl:message>
+  <wsdl:message name="SelectISONewSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectISONewResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectISONewAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelectNotISOIssueSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectNotISOIssue" />
+  </wsdl:message>
+  <wsdl:message name="SelectNotISOIssueSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectNotISOIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectNotISOIssueAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelectNewSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectNew" />
+  </wsdl:message>
+  <wsdl:message name="SelectNewSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectNewAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelectNotIssueSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectNotIssue" />
+  </wsdl:message>
+  <wsdl:message name="SelectNotIssueSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectNotIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectNotIssueAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelectLibInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectLibInfo" />
+  </wsdl:message>
+  <wsdl:message name="SelectLibInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectLibInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectLibInfoAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelectStandardInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectStandardInfo" />
+  </wsdl:message>
+  <wsdl:message name="SelectStandardInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectStandardInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectStandardInfoAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelectStandardByA1074SoapIn">
+    <wsdl:part name="parameters" element="tns:SelectStandardByA1074" />
+  </wsdl:message>
+  <wsdl:message name="SelectStandardByA1074SoapOut">
+    <wsdl:part name="parameters" element="tns:SelectStandardByA1074Response" />
+  </wsdl:message>
+  <wsdl:message name="SelectStandardByA1074AuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStdInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStdInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:portType name="StandardControlSoap">
+    <wsdl:operation name="SelectGBNew">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取国标最新发布标准</documentation>
+      <wsdl:input message="tns:SelectGBNewSoapIn" />
+      <wsdl:output message="tns:SelectGBNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectGBNotIssue">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取国标即将实施标准</documentation>
+      <wsdl:input message="tns:SelectGBNotIssueSoapIn" />
+      <wsdl:output message="tns:SelectGBNotIssueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectISONew">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取ISO最新发布标准</documentation>
+      <wsdl:input message="tns:SelectISONewSoapIn" />
+      <wsdl:output message="tns:SelectISONewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectNotISOIssue">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取ISO即将实施标准</documentation>
+      <wsdl:input message="tns:SelectNotISOIssueSoapIn" />
+      <wsdl:output message="tns:SelectNotISOIssueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectNew">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取最新发布标准</documentation>
+      <wsdl:input message="tns:SelectNewSoapIn" />
+      <wsdl:output message="tns:SelectNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectNotIssue">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取即将实施标准</documentation>
+      <wsdl:input message="tns:SelectNotIssueSoapIn" />
+      <wsdl:output message="tns:SelectNotIssueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectLibInfo">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取馆藏信息</documentation>
+      <wsdl:input message="tns:SelectLibInfoSoapIn" />
+      <wsdl:output message="tns:SelectLibInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectStandardInfo">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取标准信息</documentation>
+      <wsdl:input message="tns:SelectStandardInfoSoapIn" />
+      <wsdl:output message="tns:SelectStandardInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectStandardByA1074">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取标准信息</documentation>
+      <wsdl:input message="tns:SelectStandardByA1074SoapIn" />
+      <wsdl:output message="tns:SelectStandardByA1074SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStdInfo">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">根据标准号返回标准信息，参数说明：参数一为标准号，参数二为用户名，参数三为密码</documentation>
+      <wsdl:input message="tns:GetStdInfoSoapIn" />
+      <wsdl:output message="tns:GetStdInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StandardControlSoap" type="tns:StandardControlSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectGBNew">
+      <soap:operation soapAction="http://tempuri.org/SelectGBNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectGBNewAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectGBNotIssue">
+      <soap:operation soapAction="http://tempuri.org/SelectGBNotIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectGBNotIssueAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectISONew">
+      <soap:operation soapAction="http://tempuri.org/SelectISONew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectISONewAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectNotISOIssue">
+      <soap:operation soapAction="http://tempuri.org/SelectNotISOIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectNotISOIssueAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectNew">
+      <soap:operation soapAction="http://tempuri.org/SelectNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectNewAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectNotIssue">
+      <soap:operation soapAction="http://tempuri.org/SelectNotIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectNotIssueAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLibInfo">
+      <soap:operation soapAction="http://tempuri.org/SelectLibInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectLibInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectStandardInfo">
+      <soap:operation soapAction="http://tempuri.org/SelectStandardInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectStandardInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectStandardByA1074">
+      <soap:operation soapAction="http://tempuri.org/SelectStandardByA1074" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelectStandardByA1074AuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStdInfo">
+      <soap:operation soapAction="http://tempuri.org/GetStdInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetStdInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StandardControl">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="StandardControlSoap" binding="tns:StandardControlSoap">
+      <soap:address location="http://www.standard.org.cn/standard2007/StandardService/StandardControl.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Delete.ascx.cs" Inherits="Sysadmin_Controls_Delete" %>
+<asp:Button ID="btnDelete" runat="server" Text=" 删 除 " OnClick="btnDelete_Click" CssClass="Red InputClass"/>

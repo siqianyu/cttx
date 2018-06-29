@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+.List{width:99.8%;}
+
+.SelectBox{margin:10px 0;width:100%;background:#fafafa;border:1px solid #c9c9c9;position:relative;}
+.SelectBox p{height:23px;width:100%;padding:6px 0;overflow:hidden;float:left;}
+.SelectBox p span{color:#666;padding:0 5px 0 10px;float:left; line-height:23px;heighth:23px;overflow:hidden}
+.SelectBox p .StEnter{border:1px solid #d4d4d4;height:21px;line-height:21px;padding:0 0 0 5px;float:left} 
+.SelectBox p select{height:21px;line-height:21px;color:#898989;float:left;width:100px}
+.SelectBox .SosoBut{line-height:21px; border:1px solid #cf4e2b; background:url(../Images/SosoBut.png) repeat-x;color:#fff;width:52px;float:left;margin:0 5px;display:inline}
+
+#MoreSoso{color:#0493ee;padding:0 13px 0 0;background:url(../Images/ArrowD.png) right 10px no-repeat;line-height:23px;float:right;cursor:pointer;position:absolute;right:8px;bottom:6px}
+#MoreSoso:hover{text-decoration:underline;color:#0884e4}
+.SelectBox p .Date{background:url(../Images/Clender.png) 80px center no-repeat;width:90px;padding:0 5px;}
+
+#MoreSet{display:none}
+
+.OperaBar{heigght:24px;background:#fffcf5;border:1px solid #edd5b3;width:100%;padding:6px 0;overflow:hidden}
+
+.OperaBar .SeleAll{float:left;width:9%;padding:0 0 0 2%}
+.OperaBar .SeleAll input{margin:2px 0 0 0;float:left;display:inline}
+.OperaBar .SeleAll span{line-height:24px;color:#505050;float:left;padding:0 5px;cursor:pointer}
+
+.OperaBar .InputClass{background:url(../Images/Opera.png) repeat-x;border:1px solid #d0d0d0;float:left;margin:0 0 0 7px;display:inline;padding:0 0;line-height:22px; height:22px; overflow:hidden;}
+.OperaBar .InputClass:hover{text-decoration:underline}
+
+
+.OperaBar .CreatNew{width:98px;float:right;background:url(../Images/CreatNew.png) left repeat-x;color:#fff;margin:0 10px 0 0;border:1px solid #d91f00; height:22px; overflow:hidden; border:0px;}
+
+.MemberBox{width:100%;line-height:40px;border:1px solid #dfdfdf;border-bottom:none; margin:5px 0 10px 0;display:inline}
+.MemberBox li{width:100%;height:40px;overflow:hidden;border-bottom:1px solid #dfdfdf;float:left;behavior:url("Style/Hover.htc");}
+.MemberBox span{height:40px;overflow:hidden;float:left;color:#777;}
+.MemberBox li:hover{background:#fbfbfb}
+
+.MemberBox #MemTit{background:#f2f2f2;font-weight:bold;}
+
+.MemberBox .CkBox{float:left;width:8%;padding:0 0 0 2%}
+.MemberBox .CkBox input{ margin:10px 0 0 0; display:inline; float:left}
+
+.MemberBox .Account{width:16%;}
+.MemberBox .Account a{color:#0493ee;}
+.MemberBox .Account a:hover{text-decoration:underline;color:#005fee}
+
+.MemberBox .Name{width:10%;}
+.MemberBox .Tel{width:12%;text-align:left;padding:0 0 0 1%}
+.MemberBox .Address{width:32%;text-align:left}
+.MemberBox .Status{width:6%}
+.MemberBox .Operate{width:12%}
+.MemberBox .Operate a{padding:0 5px;}
+.MemberBox .Operate a:hover{text-decoration:underline}
+
+.MemberBox #MemTit .Address{width:24%;padding:0 0 0 8%}
+.MemberBox #MemTit .Tel{width:11%;text-align:left;padding:0 0 0 2%}
+
+.Page{width:100%;height:22px;background:#eee;padding:6px 0}
+
+.OrderBox{width:100%;line-height:40px;border:1px solid #dfdfdf;border-bottom:none; margin:5px 0 10px 0;display:inline}
+.OrderBox li{width:100%;height:40px;overflow:hidden;border-bottom:1px solid #dfdfdf;float:left;behavior:url("Style/Hover.htc");}
+.OrderBox span{height:40px;overflow:hidden;float:left;color:#777;}
+.OrderBox li:hover{background:#fbfbfb}
+
+.OrderBox #OrdTit{background:#f2f2f2;font-weight:bold;}
+
+.OrderBox .OdCkBox{float:left;width:6%;padding:0 0 0 2%}
+.OrderBox .OdCkBox input{ margin:10px 0 0 0; display:inline; float:left}
+
+.OrderBox .OrderNum{width:7%;font-weight:bold}
+
+.OrderBox .Buyer{width:18%;}
+.OrderBox .Buyer a{color:#e75006;}
+.OrderBox .Buyer a:hover{text-decoration:underline;color:#ef3800}
+
+.OrderBox .Seller{width:10%;}
+.OrderBox .Seller a{color:#0493ee;}
+.OrderBox .Seller a:hover{text-decoration:underline;color:#005fee}
+
+.OrderBox .Sum{width:15%;}
+.OrderBox .Delev{width:10%;}
+.OrderBox .Finish{width:12%;}
+.OrderBox .RcvAdd{width:20%;padding:0 0 0 1%;text-align:left}
+
+.OrderBox .title1{width:16%;}
+.OrderBox .title1 a{color:#0493ee;}
+.OrderBox .title1 a:hover{text-decoration:underline;color:#005fee}
+
+OrderBox .isShow{ text-align:center;}
+
+.OrderBox #OrdTit .RcvAdd{padding:0 0 0 8%;width:13%}
+
+.Modify{width:100%;line-height:30px;border:1px solid #dfdfdf;border-bottom:none;margin:5px 0 10px 0;display:inline}
+.Modify .ModTit{width:100%;background:url(../Images/NavBg.png) repeat-x;line-height:33px;}
+.Modify .ModTit span{padding:0 0 0 28px;background:url(../Images/ModIco.png) 10px no-repeat;color:#f90000;font-weight:bold;float:left}
+
+.Modify  li{width:100%;float:left;border-bottom:1px solid #dedede;padding:0}
+.Modify  li span{float:left;text-align:center;}
+
+.Rank{width:12%;line-height:114px;border-right:1px solid #dedede}
+.ProImg{width:59%;border-right:1px solid #dedede}
+.ProImg img{width:150px;height:100px;border:1px solid #dedede;padding:1px;margin:5px 0}
+.ModOpera{width:16%;line-height:114px;color:#888;}
+.ModOpera a{padding:0 5px;}
+.Rank1{width:12%;border-right:1px solid #dedede}
+.ModOpera1{width:16%;color:#888;}
+.ModOpera1 a{padding:0 5px;}
+
+.Modify #ModTitle{height:36px;overflow:hidden;}
+.Modify #ModTitle b{line-height:36px;color:#555}
+
+.ModBox{background:#f9f9f9;border:1px solid #ddd;width:100%;padding:0}
+.ModBox td{padding:5px}
+.ModBox .LLi{width:10%;border-right:1px solid #ddd;border-bottom:1px solid #ddd}
+.ModBox .RLi{width:89%;vertical-align:middle;text-align:left;border-bottom:1px solid #ddd}
+.ModBox .RLi img{width:150px;height:150px;margin:0px 0px 0px 40px;float:left}
+.ModBox .RLi input{height:22px;border:1px solid #ddd;line-height:22px;float:left;padding:0 0 0 5px; }
+
+
+.AddSubmit{background:url(../Images/Submit.png) repeat-x;border:1px solid #d25938;color:#fff;text-shadow:0 1px #d25938;width:100px;line-height:28px;font-size:14px;font-weight:bold;float:left;margin:0 5px}
+.AddSubmit:hover{background:url(../Images/SubmitA.png) repeat-x;}
+.AddCancel{background:url(../Images/Cancel.png) repeat-x;border:1px solid #cfcfcf;color:#838383;width:100px;line-height:28px;font-size:14px;font-weight:bold;float:left;margin:0 5px}
+.AddCancel:hover{background:url(../Images/CancelA.png) repeat-x;}

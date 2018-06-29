@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="getPriceFTZTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPriceFTZTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getPriceFTZTestResult" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticationHeader" type="tns:AuthenticationHeader" />
+      <s:complexType name="AuthenticationHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getPriceFTZ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPriceFTZResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getPriceFTZResult" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetstdDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetstdDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetstdDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStdInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStdInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStdInfoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStdInfoLibID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LibID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStdInfoLibIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStdInfoLibIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileURl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileURlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileURlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileURlLibID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LibID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileURlLibIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileURlLibIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileLStream">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FileLen" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FileBuflen" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileLStreamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileLStreamResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileStream">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FileLen" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileStreamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileStreamResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileStreamLibID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdNO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FileLen" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="libID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileStreamLibIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileStreamLibIDResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTnum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTnumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getTnumResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileLen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileLenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getFileLenResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileLenLibID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LibID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileLenLibIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getFileLenLibIDResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFileNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileNameLibID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LibID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileNameLibIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFileNameLibIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrgNames" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="TimeFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="TimeTo" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetXmlResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetXmlFileStream">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetXmlFileStreamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetXmlFileStreamResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUpdateOrgs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUpdateOrgsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUpdateOrgsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strWhere" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAccountListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountListByPager">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strWhere" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageindex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountListByPagerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAccountListByPagerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountAmount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strWhere" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountAmountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAccountAmountResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MyUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAccountDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getPriceFTZTestSoapIn">
+    <wsdl:part name="parameters" element="tns:getPriceFTZTest" />
+  </wsdl:message>
+  <wsdl:message name="getPriceFTZTestSoapOut">
+    <wsdl:part name="parameters" element="tns:getPriceFTZTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPriceFTZTestAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getPriceFTZSoapIn">
+    <wsdl:part name="parameters" element="tns:getPriceFTZ" />
+  </wsdl:message>
+  <wsdl:message name="getPriceFTZSoapOut">
+    <wsdl:part name="parameters" element="tns:getPriceFTZResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPriceFTZAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetstdDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetstdDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetstdDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetstdDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetstdDetailAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStdInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStdInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoLibIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStdInfoLibID" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoLibIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStdInfoLibIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStdInfoLibIDAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetFileURlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileURl" />
+  </wsdl:message>
+  <wsdl:message name="GetFileURlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileURlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileURlAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetFileURlLibIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileURlLibID" />
+  </wsdl:message>
+  <wsdl:message name="GetFileURlLibIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileURlLibIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileURlLibIDAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetFileLStreamSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileLStream" />
+  </wsdl:message>
+  <wsdl:message name="GetFileLStreamSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileLStreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileLStreamAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetFileStreamSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileStream" />
+  </wsdl:message>
+  <wsdl:message name="GetFileStreamSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileStreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileStreamAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetFileStreamLibIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileStreamLibID" />
+  </wsdl:message>
+  <wsdl:message name="GetFileStreamLibIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileStreamLibIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileStreamLibIDAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getTnumSoapIn">
+    <wsdl:part name="parameters" element="tns:getTnum" />
+  </wsdl:message>
+  <wsdl:message name="getTnumSoapOut">
+    <wsdl:part name="parameters" element="tns:getTnumResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTnumAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getFileLenSoapIn">
+    <wsdl:part name="parameters" element="tns:getFileLen" />
+  </wsdl:message>
+  <wsdl:message name="getFileLenSoapOut">
+    <wsdl:part name="parameters" element="tns:getFileLenResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFileLenAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getFileLenLibIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getFileLenLibID" />
+  </wsdl:message>
+  <wsdl:message name="getFileLenLibIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getFileLenLibIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFileLenLibIDAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getFileNameSoapIn">
+    <wsdl:part name="parameters" element="tns:getFileName" />
+  </wsdl:message>
+  <wsdl:message name="getFileNameSoapOut">
+    <wsdl:part name="parameters" element="tns:getFileNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFileNameAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getFileNameLibIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getFileNameLibID" />
+  </wsdl:message>
+  <wsdl:message name="getFileNameLibIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getFileNameLibIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFileNameLibIDAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetXml" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlFileStreamSoapIn">
+    <wsdl:part name="parameters" element="tns:GetXmlFileStream" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlFileStreamSoapOut">
+    <wsdl:part name="parameters" element="tns:GetXmlFileStreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlFileStreamAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateOrgsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUpdateOrgs" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateOrgsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUpdateOrgsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateOrgsAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getAccountListSoapIn">
+    <wsdl:part name="parameters" element="tns:getAccountList" />
+  </wsdl:message>
+  <wsdl:message name="getAccountListSoapOut">
+    <wsdl:part name="parameters" element="tns:getAccountListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAccountListAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getAccountListByPagerSoapIn">
+    <wsdl:part name="parameters" element="tns:getAccountListByPager" />
+  </wsdl:message>
+  <wsdl:message name="getAccountListByPagerSoapOut">
+    <wsdl:part name="parameters" element="tns:getAccountListByPagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAccountListByPagerAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getAccountAmountSoapIn">
+    <wsdl:part name="parameters" element="tns:getAccountAmount" />
+  </wsdl:message>
+  <wsdl:message name="getAccountAmountSoapOut">
+    <wsdl:part name="parameters" element="tns:getAccountAmountResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAccountAmountAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="getAccountDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:getAccountDetail" />
+  </wsdl:message>
+  <wsdl:message name="getAccountDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:getAccountDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAccountDetailAuthenticationHeader">
+    <wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:portType name="SubStationSoap">
+    <wsdl:operation name="getPriceFTZTest">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取标准信息</documentation>
+      <wsdl:input message="tns:getPriceFTZTestSoapIn" />
+      <wsdl:output message="tns:getPriceFTZTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPriceFTZ">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">获取标准信息</documentation>
+      <wsdl:input message="tns:getPriceFTZSoapIn" />
+      <wsdl:output message="tns:getPriceFTZSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetstdDetail">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">根据标准号返回标准信息，参数说明：参数一为标准号，参数二为用户名，参数三为密码</documentation>
+      <wsdl:input message="tns:GetstdDetailSoapIn" />
+      <wsdl:output message="tns:GetstdDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStdInfo">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">根据标准号返回标准信息，参数说明：参数一为标准号，参数二为用户名，参数三为密码</documentation>
+      <wsdl:input message="tns:GetStdInfoSoapIn" />
+      <wsdl:output message="tns:GetStdInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStdInfoLibID">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">根据标准号返回标准信息，参数说明：参数一为标准号，参数二为用户名，参数三为密码</documentation>
+      <wsdl:input message="tns:GetStdInfoLibIDSoapIn" />
+      <wsdl:output message="tns:GetStdInfoLibIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileURl">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回文件下载地址,id标准号</documentation>
+      <wsdl:input message="tns:GetFileURlSoapIn" />
+      <wsdl:output message="tns:GetFileURlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileURlLibID">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回文件下载地址,stdNO标准号</documentation>
+      <wsdl:input message="tns:GetFileURlLibIDSoapIn" />
+      <wsdl:output message="tns:GetFileURlLibIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileLStream">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回字节数组限制每次文件传输大小返回字节数组id标准号，FileLen客户端请求文件的起始长度（单位字节），FileBuflen请求的字节数</documentation>
+      <wsdl:input message="tns:GetFileLStreamSoapIn" />
+      <wsdl:output message="tns:GetFileLStreamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileStream">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回字节数组不限制每次文件传输大小返回字节数组，id标准号，FileLen客户端请求文件的起始长度（单位字节）</documentation>
+      <wsdl:input message="tns:GetFileStreamSoapIn" />
+      <wsdl:output message="tns:GetFileStreamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileStreamLibID">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回字节数组不限制每次文件传输大小返回字节数组，id标准号，FileLen客户端请求文件的起始长度（单位字节）</documentation>
+      <wsdl:input message="tns:GetFileStreamLibIDSoapIn" />
+      <wsdl:output message="tns:GetFileStreamLibIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTnum">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回服务器最大线程数目</documentation>
+      <wsdl:input message="tns:getTnumSoapIn" />
+      <wsdl:output message="tns:getTnumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileLen">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回文件长度</documentation>
+      <wsdl:input message="tns:getFileLenSoapIn" />
+      <wsdl:output message="tns:getFileLenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileLenLibID">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回文件长度</documentation>
+      <wsdl:input message="tns:getFileLenLibIDSoapIn" />
+      <wsdl:output message="tns:getFileLenLibIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileName">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回文件名</documentation>
+      <wsdl:input message="tns:getFileNameSoapIn" />
+      <wsdl:output message="tns:getFileNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileNameLibID">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回文件名</documentation>
+      <wsdl:input message="tns:getFileNameLibIDSoapIn" />
+      <wsdl:output message="tns:getFileNameLibIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">文件更新下载列表</documentation>
+      <wsdl:input message="tns:GetXmlSoapIn" />
+      <wsdl:output message="tns:GetXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXmlFileStream">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回Xml字节数组不限制每次文件传输大小返回字节数组，FileName XML文件名</documentation>
+      <wsdl:input message="tns:GetXmlFileStreamSoapIn" />
+      <wsdl:output message="tns:GetXmlFileStreamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateOrgs">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">更新用户购买的组织</documentation>
+      <wsdl:input message="tns:GetUpdateOrgsSoapIn" />
+      <wsdl:output message="tns:GetUpdateOrgsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAccountList">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回分站用户下载记录</documentation>
+      <wsdl:input message="tns:getAccountListSoapIn" />
+      <wsdl:output message="tns:getAccountListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAccountListByPager">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回分站用户下载记录</documentation>
+      <wsdl:input message="tns:getAccountListByPagerSoapIn" />
+      <wsdl:output message="tns:getAccountListByPagerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAccountAmount">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回分站用户下载扣费统计</documentation>
+      <wsdl:input message="tns:getAccountAmountSoapIn" />
+      <wsdl:output message="tns:getAccountAmountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAccountDetail">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">返回分站帐户详细信息</documentation>
+      <wsdl:input message="tns:getAccountDetailSoapIn" />
+      <wsdl:output message="tns:getAccountDetailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SubStationSoap" type="tns:SubStationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPriceFTZTest">
+      <soap:operation soapAction="http://tempuri.org/getPriceFTZTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getPriceFTZTestAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPriceFTZ">
+      <soap:operation soapAction="http://tempuri.org/getPriceFTZ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getPriceFTZAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetstdDetail">
+      <soap:operation soapAction="http://tempuri.org/GetstdDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetstdDetailAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStdInfo">
+      <soap:operation soapAction="http://tempuri.org/GetStdInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetStdInfoAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStdInfoLibID">
+      <soap:operation soapAction="http://tempuri.org/GetStdInfoLibID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetStdInfoLibIDAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileURl">
+      <soap:operation soapAction="http://tempuri.org/GetFileURl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFileURlAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileURlLibID">
+      <soap:operation soapAction="http://tempuri.org/GetFileURlLibID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFileURlLibIDAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileLStream">
+      <soap:operation soapAction="http://tempuri.org/GetFileLStream" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFileLStreamAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileStream">
+      <soap:operation soapAction="http://tempuri.org/GetFileStream" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFileStreamAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileStreamLibID">
+      <soap:operation soapAction="http://tempuri.org/GetFileStreamLibID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFileStreamLibIDAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTnum">
+      <soap:operation soapAction="http://tempuri.org/getTnum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getTnumAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileLen">
+      <soap:operation soapAction="http://tempuri.org/getFileLen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getFileLenAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileLenLibID">
+      <soap:operation soapAction="http://tempuri.org/getFileLenLibID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getFileLenLibIDAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileName">
+      <soap:operation soapAction="http://tempuri.org/getFileName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getFileNameAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileNameLibID">
+      <soap:operation soapAction="http://tempuri.org/getFileNameLibID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getFileNameLibIDAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <soap:operation soapAction="http://tempuri.org/GetXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetXmlAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXmlFileStream">
+      <soap:operation soapAction="http://tempuri.org/GetXmlFileStream" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetXmlFileStreamAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateOrgs">
+      <soap:operation soapAction="http://tempuri.org/GetUpdateOrgs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetUpdateOrgsAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountList">
+      <soap:operation soapAction="http://tempuri.org/getAccountList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getAccountListAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountListByPager">
+      <soap:operation soapAction="http://tempuri.org/getAccountListByPager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getAccountListByPagerAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountAmount">
+      <soap:operation soapAction="http://tempuri.org/getAccountAmount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getAccountAmountAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountDetail">
+      <soap:operation soapAction="http://tempuri.org/getAccountDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:getAccountDetailAuthenticationHeader" part="AuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SubStation">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="SubStationSoap" binding="tns:SubStationSoap">
+      <soap:address location="http://pdf.standard.org.cn/download/DownloadService/SubStation.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

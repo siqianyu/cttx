@@ -1,0 +1,73 @@
+*{margin:0;padding: 0;}
+body{background:#fff;font-family:'微软雅黑';font-size:20px;color:#666;text-align:center;margin:0 auto;overflow-x: hidden;width:100%}
+button,input,select,textarea{font-family:'微软雅黑';outline:none}
+a{text-decoration:none}
+img{border:none}
+li{list-style:none}
+i{font-style: normal;} 
+.left{float:left}
+
+.bottom-pd {padding-bottom: 2.2em;display: inline-block;}
+.title,.crumbs{width:100%;line-height: 2em;padding:.3em 0;float: left;}
+.title i,.crumbs i{float:left;background: #00a7f6;height:1em;width:.2em;margin-top:.5em}
+.title b,.crumbs b{font-size: .8em;font-weight: normal;float:left;}
+.title b{color:#333;padding-left: .5em;}
+.title a,.crumbs a{font-size: .8em;}
+.title a{font-size: .7em !important;color:#d7d7d7;float:right;padding-right: .5em;}
+.title a:hover{color: #888;}
+
+.crumbs b,.crumbs a{padding:0 .5em}
+.crumbs b{color:#666}
+.crumbs a{color:#333;float:left}
+.crumbs span{color:#999;float:left}
+.crumbs a:hover{color:#00A7F6}
+
+.banner,.banner img{width:100%;float:left}
+.banner1{margin-bottom: .5em;}
+
+.footer-menu{width:100%;background: #fff;border-top:1px solid #e1e1e1;position: fixed;z-index:999;bottom:0;left:0}
+.footer-menu li{width:33.3%;float:left;padding-bottom: .2em;}
+.footer-menu li b,.footer-menu li span{float:left;width:100%}
+.footer-menu li b{font-weight: normal;padding-top:.1em;}
+.footer-menu li b i{margin:0 auto;font-size:.9em}
+.footer-menu li span{color:#888;font-size: .75em;line-height: 120%;}
+.footer-menu li.current span,.footer-menu li.current b i{color:#00a7f6}
+
+.cover{background: rgba(0,0,0,.3);position: fixed;width:100%;height:100%;z-index:999;left:0;top:0;display: none;}
+.cover .model{width:80%;background: #fff;border-radius: 2px;position: absolute;left:10%;font-size: .75em;padding:1em 0;top:50%;margin-top:-10em}
+.cover .model p.write-comment{width:90%;padding:.3em 5%;float:left;;}
+.cover .model p b,.cover .model p i,.cover .model p span{float:left}
+.cover .model p b{font-weight: normal;color:#333;padding-right: .4em;}
+.cover .model p i{color:#888;font-size: .9em;margin-right: .3em;}
+.cover .model p textarea{width:calc(100% - 5em);min-height: 4em;text-align: left;color:#666;padding: .5em;}
+
+.cover .model p.btn-bar{width:100%;text-align: center;padding: .5em 0;}
+.cover .model p.btn-bar button{border:none;line-height: 200%;font-size:1em;display: inline-block;padding: 0 1em;border-radius: 2px;margin:0 .2em}
+.cover .model p.btn-bar button.submit{background: #42ACBC;color:#fff;}
+.cover .model p.btn-bar button.cancel{background: #eee;color:#666;}
+.cover .model p.btn-bar button:hover{opacity:.8}
+
+.write-comment i.on{color:#fbc206 !important}
+
+/*-------------------------下面是滚动切换的banner图----------------------*/
+
+.new_banner{width:100%;height:auto;position:relative;float:left;background:url(../images/loading.gif) no-repeat center center #fff;overflow:hidden}
+.rslides{width:100%;position:relative;list-style:none;padding:0;float:left}
+.rslides li{width:100%;position:relative;height:auto;overflow:hidden;float:left}
+.rslides li span{width:100%;height:50px;line-height:50px;background:rgba(0,0,0,.8);color:#fff;bottom:0;left:0;text-indent:2em;text-align:left;position:absolute;font-size:20px;}
+.rslides_nav{ width:36px; height:36px;display:block; position:absolute;text-indent:-10em;overflow:hidden;}
+
+
+.prev,.next{display:none;}
+.prev{left:-50px;background: url(../images/bannerSlide.png) left top no-repeat;}
+.prev:hover{background: url(../images/bannerSlide.png) left bottom no-repeat;}
+.next{background: url(../images/bannerSlide.png) right top no-repeat;right:-50px;}
+.next:hover{background: url(../images/bannerSlide.png) right bottom no-repeat;}
+.rslides_tabs{ position:absolute;left:50%;margin-left:-20px;bottom:0px;clear:both;text-align:center; z-index:999;}
+.rslides_tabs li{display:inline;float:none;_float:left;*float:left;margin-right:5px;}
+.rslides_tabs a{width:8px;height:8px;background:#fff;overflow:hidden;float:left;margin-left:6px;font-size:0;border-radius: 100%;}
+.rslides_tabs .rslides_here a{background:#fb9236;transition:.2s all} 
+
+@media screen and (max-width: 320px) {
+	 body{font-size:16px;}
+}

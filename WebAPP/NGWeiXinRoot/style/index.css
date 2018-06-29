@@ -1,0 +1,214 @@
+
+.course-nav{width:98%;padding:.8em 1% .75em 1%;display: table;}
+.course-nav li{width:22%;padding:.6em 1.5%;font-size: .75em;float: left;}
+.course-nav li b{width:3.8em;max-width:100%;background: #f8f9fb;border-radius: 100%;height:3.8em;max-height:100%;display:inline-block;margin:0 auto;transition: .2s all;font-weight: normal;position: relative;}
+.course-nav li i{font-size: 2em;transition: .2s all;position: absolute;top:50%;margin-top:-.5em;left:50%;margin-left:-.5em}
+.course-nav li span{color:#666;width:100%;line-height:180%;display: inline-block;transition: .2s all;}
+
+.course-nav li.nav1 i,.course-nav li.nav1:hover span{color:#ff5505}
+.course-nav li.nav1:hover b{background: #ff5505;}
+.course-nav li.nav2 i,.course-nav li.nav2:hover span{color:#ffc300}
+.course-nav li.nav2:hover b{background: #ffc300;}
+.course-nav li.nav3 i,.course-nav li.nav3:hover span{color:#cdde20}
+.course-nav li.nav3:hover b{background: #cdde20;}
+.course-nav li.nav4 i,.course-nav li.nav4:hover span{color:#56ca5a}
+.course-nav li.nav4:hover b{background: #56ca5a;}
+
+.course-nav li.nav5 i,.course-nav li.nav5:hover span{color:#1ec1b1}
+.course-nav li.nav5:hover b{background: #1ec1b1;}
+.course-nav li.nav6 i,.course-nav li.nav6:hover span{color:#00a7f6}
+.course-nav li.nav6:hover b{background: #00a7f6;}
+.course-nav li.nav7 i,.course-nav li.nav7:hover span{color:#7ba6be}
+.course-nav li.nav7:hover b{background: #7ba6be;}
+.course-nav li.nav8 i,.course-nav li.nav8:hover span{color:#bc8d7d}
+.course-nav li.nav8:hover b{background: #bc8d7d;}
+
+.course-nav li.nav4 i{font-size: 2.2em;}
+.course-nav li.nav7 i{font-size: 4em;margin-top:-.55em}
+.course-nav li:hover i{color:#fff}
+.recommend-course{width:100%;border-top:.4em solid #eee;}
+.recommend-course ul{float:left;width:100%;padding:.4em 0;}
+.recommend-course ul li{width:49%;margin:0 1% .5em 0;float:left;font-size: .75em;}
+.recommend-course ul li:nth-child(2n){margin:0 0 .5em 1%;}
+.recommend-course ul li b{width:100%;background: #b4d8d4;display: inline-block}
+.recommend-course ul li span{color:#666;width:100%;display: inline-block;line-height: 200%;}
+.recommend-course ul li b img{width:100%;}
+.recommend-course ul li:hover span{color:#00a7f6}
+.recommend-course ul li:hover b{opacity: .8;}
+
+.help-bar{width:100%;background: #eee;padding:.5em 0;overflow: hidden;}
+.help-bar ul{width:103%;}
+.help-bar li{width:32.3%;margin-left:-1%;margin-right:2%;font-size: .8em;position: relative;overflow: hidden;float:left}
+.help-bar li .help-title{width:92%;color:#fff;line-height:3em;position: relative;z-index:10;padding-right:8%}
+.help-bar li .help-arrow{position:absolute;right:.8em;top:.8em;opacity:.76;z-index:10}
+.help-bar li .shadow{width:8em;height:8em;transform: rotate(45deg);position: absolute;right:-5.66em;top:0;z-index:1}
+
+.help-bar li span{width:90%;padding:.5em 2% .5em 8%;background: #fff;font-size: .9em;float:left;position: relative;z-index:11;margin-bottom: .4em;}
+.help-bar li span a{width:100%;text-align: left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;float:left;line-height: 150%;}
+
+.help-bar li.help1{background: #917368;}
+.help-bar li.help1 .shadow{background: #725145;}
+.help-bar li.help1 span a{color:#725145}
+.help-bar li.help1:hover span a{color:#644237}
+
+.help-bar li.help2{background: #9d9d9d;}
+.help-bar li.help2 .shadow{background: #858282;}
+.help-bar li.help2 span a{color:#858282}
+.help-bar li.help2:hover span a{color:#6e6060}
+
+.help-bar li.help3{background: #5f7c8c;}
+.help-bar li.help3 .shadow{background: #496676;}
+.help-bar li.help3 span a{color:#496676}
+.help-bar li.help3:hover span a{color:#395b6d}
+
+/*-------------------------------------------------------------*/
+
+.course-class{width:100%;padding:.5em 0;background: #eee;}
+.course-class li{width:30.5%;margin-left:1%;float:left;background: #fff;padding:.5%;}
+.course-class li b,.course-class li span{width:100%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;float:left}
+.course-class li b{width:94%;line-height:4em;font-size: .8em;color:#fff;font-weight: normal;margin:.2em 3%;transition: .2s all;border-radius: 2px;}
+.course-class li span{width:100%;color:#666;font-size: .7em;line-height: 220%;}
+
+.course-class li.nav1 b{color: #42acbc;background: #e0f9fc;}
+.course-class li.nav2 b{color: #c262d2;background: #fcedff;}
+.course-class li.nav3 b{color: #8d6dd5;background: #f4f0fe;}
+.course-class li.nav1:hover b{background: #5cc9d9;}
+.course-class li.nav2:hover b{background: #df77f0;}
+.course-class li.nav3:hover b{background: #a686ee;}
+.course-class li:hover b{color:#fff}
+.course-class li:hover span{color:#333}
+
+.course-list{width:100%;border-top:1px solid #ddd;}
+.course-list li{width:94%;padding:.5em 3%;border-bottom: 1px solid #ddd;float:left;position: relative;}
+.course-list li .course-img{width:37%;background: #b4d8d4;}
+.course-list li .course-img img{width:100%;}
+.course-list li p{width:60%;padding-left:3%;float:left;font-size: .7em;line-height: 140%;}
+.course-list li p b,.course-list li p span{width:100%;text-align: left;color:#666;float:left}
+.course-list li p b{color:#333 !important;}
+.course-list li p span.course-des{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;margin-bottom: .2em;}
+.course-list li p span i.update{color:#44b451}
+.course-list li p span i.over{color:#fc6060}
+.course-list li:hover{background: #f5f5f5;}
+.course-info-top li .course-img{width:44% !important;}
+.course-info-top li p{width:53% !important;}
+.course-info-top li:hover{background: #fff !important;}
+.course-list li p span.news-des{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:3;overflow: hidden;margin: .2em 0;color:#888;}
+.course-list li p b.news-tit{overflow:hidden;white-space:nowrap;text-overflow: ellipsis;font-weight: normal;font-size: 1.1em;}
+
+.course-list li button{position: absolute;right:.5em;border-radius: 4px;border:none;line-height: 220%;padding:0 1em;border:none;color:#fff;font-size: .7em;}
+.course-list li button.consult-btn{background: #44b451;bottom:4.6em}
+.course-list li button.buy-btn{background: #ffc300;bottom:1.4em}
+.course-list li button:hover{opacity:.8}
+
+/*---------------------------------------------------------------------------*/
+
+.course-slide{width:100%;font-size: .75em;color:#333;overflow: hidden;line-height: 270%;}
+.course-slide p{width:102%;position: relative;float:left}
+.course-slide p span{width:33%;border-right:1px solid #eee;float:left;border-bottom:1px solid #eee}
+.course-slide p i{position: absolute;width:0;height:0;border:6px solid transparent;border-bottom:6px solid #45bbae;bottom:0;left:15%;transition: .4s all ease-in;}
+.course-slide p span.active{border-bottom:1px solid #45bbae;color:#45bbae;background: #fbfefe;}
+
+.course-introduct{width:94%;padding:.5em 3%;float:left;font-size: .7em;color:#666;line-height: 150%;}
+.course-introduct img,.course-introduct p{max-width: 100%;margin:.3em 0}
+
+
+.chapter-list{width:100%;float:left}
+.chapter-list li{width:94%;border-bottom: 1px solid #ddd;padding:.8em 3%;position: relative;float:left;line-height: 120%;}
+.chapter-list li b{color:#666;font-size: .75em;width:calc(100% - 3em);float:left;text-align: left;padding-right: 3em;box-sizing: border-box;font-weight: normal;}
+.chapter-list li span{position: absolute;right:3%;top:50%;margin-top:-.5em}
+.chapter-list li span i,.chapter-list li span a{transition: .2s all;}
+.chapter-list li span i{color:#45bbae;font-size: 1em;line-height:1em;float:left;font-weight: bold;}
+.chapter-list li span a{border-radius: 4px;line-height:120%;padding:.5em 1em;background: #82e5da;color:#fff;font-size: .7em;margin-left:.5em;float:left}
+
+.chapter-list li b a{color:#999;font-size: .9em;width:100%;display: inline-block;}
+.chapter-list li b a i{color:#ffa200}
+
+.chapter-list li:hover{background: #f5f5f5;}
+
+
+.evaluate-title {width:94%;font-size: .75em;color:#333;line-height: 200%;text-align: left;padding: .5em 3%;}
+.evaluate-title a{float:right;color:#ffae00;line-height: 2em;}
+.evaluate-title a i{margin-right:.3em;}
+.evaluate-title a:hover{color:#ff7e00}
+
+
+.evaluate-list{width:100%;}
+.evaluate-list li{width:90%;padding:.5em 5%;border-bottom:1px solid #ddd;font-size: .7em;position: relative;float:left;line-height: 120%;}
+.evaluate-list li .user-icon{width:2.6em;position: absolute;left:5%;top:.5em;background: #7dd1c8;height:2.6em;border-radius: 100%;line-height: 2.6em;font-weight: normal;}
+.evaluate-list li .user-icon i{color:#fff}
+
+.evaluate-list li p{width:100%;padding-left:3.6em;box-sizing: border-box;float:left}
+.evaluate-list li p span{text-align: left;color:#666;line-height: 150%;width:100%;float:left}
+.evaluate-list li p i.time{float:right;color:#999}
+.evaluate-list li p span.course-mark i{display: inline-block;color:#fbc206;margin-left:.2em;font-size: 1.1em;}
+
+.video{width:100%;background: #f8f9fb;}
+.lesson-info{width:94%;padding:.5em 3% .65em 3%;font-size: .75em;line-height: 150%;color:#333;;text-align: left;background: #f8f9fb}
+
+.exercise{width:100%;background: #fff;border:solid #eee;border-width:1px 0;position: relative;}
+.exercise .exercise-info{color:#666;line-height: 150%;text-align: left;font-size: .7em;padding:.2em 3% .8em 3%;width:94%}
+.exercise .exercise-info b{padding: 0 .3em;color:#ffa200}
+.exercise .take-exercise{position: absolute;right:1em;top:.7em;font-size: .7em;border-radius: 2px;border:1px solid #7dd1c8;line-height: 190%;padding:0 .8em;background: transparent;color:#7dd1c8;transition: .2s all;}
+.exercise .take-exercise:hover{background:#7dd1c8;color:#fff}
+
+.exercise-box{background:#F8F9FB;border-bottom: 1px solid #d8d8d8;padding:.8em 3%;width:94%;font-size: .85em;color:#333;text-align: left;line-height: 150%;}
+
+.answer-btn{width:94%;padding:.8em 3% 0 3%;background: #F8F9FB;}
+.answer-btn button{display: inline-block;background: #1EC1B1;color:#fff;border:none;line-height: 200%;padding: 0 2.5em;border-radius: 4px;font-size: 1em;transition:.2s all}
+.answer-btn button:hover{opacity:.8}
+
+
+.answer-box{font-size: .8em;color:#555;width:94%;padding:0 3% .8em 3%;text-align: left;float:left;}
+.answer-box p{width:100%;float:left;line-height: 150%;padding:.5em 0}
+.answer-box p b,.answer-box p i{width:1.6em;height:1.6em;line-height:1.64em;float:left;font-weight: normal;text-align: center !important;margin-right:.3em;overflow: hidden;}
+.answer-box p i{display: none;border-radius: 100%;}
+.answer-box p b{border-radius: 100%;border:1px solid #eee;}
+.answer-box p.answer i{display: block;}
+.answer-box p.answer b{display: none;}
+.answer-box p.chosen b{background: #279ed7;color:#fff;border:1px solid #279ed7;}
+.answer-box p span{width:calc(100% - 3em);float:left;padding-top: .15em;line-height: 150%;}
+.answer-box p.right i{background: #5fc56c;color:#fff;border:1px solid #5fc56c;}
+.answer-box p.wrong i{background: #e3696b;color:#fff;border:1px solid #e3696b;}
+.answer-box p.wrong span{color:#555 !important;}
+
+.explain{width:94%;padding:1em 3%;border-top: 1px solid #eee;text-align: left;color:#888;font-size: .75em;line-height: 150%;display: none;}
+
+.exercise-btn-bar{width:100%;padding:.5em 0 1em 0;background: #F8F9FB;}
+.exercise-btn-bar button{display: inline-block;margin:0 .2em;font-size: .8em;line-height: 220%;padding: 0 1.5em;border:none;border-radius: 2px;background: #888;color:#fff;transition: .2s all;}
+.exercise-btn-bar button:hover{background: #ddd;color:#666;}
+
+/*---------------------------------------------------------*/
+
+.article{width:90%;padding:.8em 5%;font-size: .8em;text-align: left;}
+.article .article-title{color:#222;font-size: 1.2em;line-height: 150%;width:100%;}
+.article .article-info{font-size: .88em;color:#aaa;width:100%;line-height: 200%;border-bottom:1px dashed #eee;padding-bottom: .2em;}
+.article .article-detail{width:94%;line-height: 180%;padding:.5em 3%;color:#333;font-size: .98em;}
+.article .article-detail p{padding:.3em 0;}
+.article .article-detail img{max-width: 100%;display: inline-block;margin:0 auto}
+
+/*以下是新的首页焦点图样式*/
+
+.carousel-image-box{width: 100%;overflow-x:hidden;}
+.carousel-image{overflow: hidden;position: relative;height:180px;}
+.carousel-image div{position: absolute;height:180px;width:100%}
+.carousel-image a{display: block;float:left;height: 180px;transition: .2s all ease-out;}
+/*.carousel-image a img{width:100%;height:240px;margin:0;border:none;}*/
+.carousel-num {position: absolute;bottom:10px;}
+.carousel-num i{cursor: pointer; font-style:normal;background-color:#ddd;color:#fff;font-size: 0;height: 8px;width: 8px;border-radius:  8px;overflow: hidden;margin-left:  4px;display: inline-block;transition:.2s all;float:left}
+.carousel-num i.current{background-color: #fb9236;}
+
+/*一下是0414更新内容，包括答题卡页面*/
+
+.btn-bottom{position: fixed;left:0;bottom:2.2em;width:100%}
+
+.answer-card{width:100%;}
+.answer-card .card-title{width:90%;float:left;font-size: .8em;color:#333;text-align: left;line-height: 220%;padding:.3em 5%;background: #F8F9FB;}
+.answer-card .card-title a{font-size: .9em;color:#e3696b}
+.answer-card ul{width:90%;float:left;padding:.8em 5%}
+.answer-card ul li{width:2.4em;line-height: 2.6em;font-size: .7em;border-radius:100%;float:left;margin:.3em;border:1px solid #1EC1B1;color:#1EC1B1;background: #F8F9FB;height:2.4em}
+.answer-card ul li.answer-right{border:1px solid #5fc56c;background: #5fc56c;color:#fff}
+.answer-card ul li.answer-wrong{border:1px solid #e3696b;background: #e3696b;color:#fff}
+
+.answer-card .marks-sum{width:90%;border-top:1px solid #d8d8d8;padding:1em 5% .5em 5%;color:#333;font-size: .9em;float:left;text-align: left;}
+.answer-card .marks-sum b{color:#e3696b;padding: 0 .2em;}
+.answer-card .marks-sum i{width:.3em;height:.3em;border:1px solid #aaa;border-radius:100%;float:left;margin:.35em .5em 0 0;background: #aaa;}

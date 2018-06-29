@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Show.ascx.cs" Inherits="Sysadmin_Controls_Show" %>
+<asp:Button ID="btnShow" runat="server" Text=" 查 看 " onclick="btnShow_Click" CssClass="Gray InputClass" />

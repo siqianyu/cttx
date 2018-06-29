@@ -1,0 +1,2 @@
+<script type="text/javascript" language="javascript" src="/js/My97DatePicker/WdatePicker.js"></script>
+<input name="input3" type="text" id="txtST" readonly="readonly"  onClick="WdatePicker()" />

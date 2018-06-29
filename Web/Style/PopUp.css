@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:none}
+#PopUp{width:770px;position:absolute;z-index:99;left:50%;top:50%;margin:-300px 0 0 -400px;background:#f6f9fb;padding:20px 15px 15px;}
+.PopClose{position:absolute;right:5px;top:5px;cursor:pointer}
+.PopTitle{width:100%;line-height:29px;background:url(../Images/PopTit.png) repeat-x;border:1px solid #d6a474;color:#bd411f;font-weight:bold;letter-spacing:1px;padding:1px 0 0 0}
+.PopBox{padding:10px 0.5% 0 0.5%;width:99%;overflow:hidden;}
+
+.ModTab{width:100%;border:none;background:#b5d4e6;line-height:200%;}
+.ModTab td{padding:6px;}
+.ModTab td .Enter{width:72%;height:21px;border:1px solid #c3c3c3;background:#fff;padding:0 0 0 5px;color:#666}
+
+.ModTab .Ltd{text-align:right;background:#f5f9fa;font-weight:bold;color:#4e7a9e;width:15%}
+.ModTab .Rtd{text-align:left;background:#f9fbfd;width:35%}
+.ModTab .ButBox{background:#fff;padding:8px 0;width:100%;text-align:center} 
+.ButBox p{margin:0 auto;width:300px}
+
+.ButBox a{width:135px;text-align:center;line-height:32px;font-size:14px;font-weight:bold;margin:0 5px;float:left}
+.ButBox .Submit{color:#ab0b0b;text-shadow:0 1px #ffe8bb;background:url(../Images/SubmitN.png);}
+.ButBox .Submit:hover{background:url(../Images/SubmitA.png);}
+.ButBox .Return{color:#777;text-shadow:0 1px #fff;background:url(../Images/ReturnN.png);}
+.ButBox .Return:hover{background:url(../Images/ReturnA.png);}
+
+.ViewBox .Rtd{color:#333}
+
+.ViewBox{width:100%;border:none;background:#b5c5e6;line-height:200%;}
+.ViewBox td{padding:6px;}
+.ModTab td .Enter{width:72%;height:21px;border:1px solid #c3c3c3;background:#fff;padding:0 0 0 5px;color:#666}
+
+.ViewBox .Ltd{text-align:right;background:#f5f6fa;font-weight:bold;color:#59719a;width:15%}
+.ViewBox .Rtd{text-align:left;background:#fdfdff;width:35%}
+.ViewBox .ButBox{background:#fff; padding:8px 0 8px 40%} 
+
+/*----------------------------------------------------*/
+
+.RecordTit{line-height:35px;background:url(../Images/PosiBg.png) top repeat-x #e7f9ff;color:#1d67a5;width:100%;font-weight:bold;font-size:14px;text-shadow:0 1px #f7fcff;float:left;border:1px solid #a2c8e0}
+
+.RecordT{border:1px solid #cde3f1;margin:10px 0 0 0;float:left;background:#f7fbfd;padding:2px 0}
+.RecordT p{float:left;display:inline-block;padding:2px 5px;}
+.RecordT .ItemName{padding:2px 5px;color:#4f7ea6;font-weight:bold;line-height:26px;float:left;}
+.RecordT .ItemData{border-bottom:1px solid #666;line-height:25px;float:left;text-align:left;margin:2px;color:#666}
+
+.RecordT input{height:20px;border:1px solid #bbd5e7;line-height:20px;padding:0 0 0 5px;color:#666;margin:4px;float:left;}
+.RecordT .EnterS{width:50px;}
+.RecordT .EnterM{width:120px;}
+.RecordT .EnterL{width:200px;}
+.RecordT .EnterXL{width:300px;}
+.RecordT .EnterXXL{width:400px;}
+
+.RecordBox{float:left;width:100%;margin:10px 0}
+.SampleTab{width:100%;background:#b5d4e6;border:none;line-height:200%;float:left;color:#666;}
+.SampleTab .Ttr{}
+.SampleTab .Ttr td{font-weight:bold;padding:2px 5px;color:#1c4471;background:#eff7fd}
+.SampleTab td{padding:5px 3px;background:#fff;}
+.SampleTab .ValueNum{width:60%;height:18px;line-height:18px;text-align:center;border:1px solid #ddd}
+
+.RecordBut{width:100%;height:32px;float:left;padding:4px 0;float:left;background:#eaf5fa}
+
+.Formula{width:100%;background:#aaa;border:none;line-height:150%;color:#666;margin:10px 0 0 0;float:left}
+.Formula td{ background:#f9f9f9;padding:5px 0;}
+
+.Formula  .ForDoub{padding:0 5px;line-height:20px;float:left}
+.Formula  .ForDoub span{padding:0 5px;font-size:14px;float:left}
+.Formula  .ForDoub .ForIpt{width:20%;height:18px;line-height:18px;background:#fff;border:1px solid #e9e9e9;border-bottom:1px solid #ccc;padding:0 0 0 5px;color:#555;float:left}
+
+
+.Process{width:100%;font-size:12px; overflow-x:hidden;overflow-y:scroll;color:#555}
+.Process table{width:100%;background:#a5d6f3;line-height:180%;color:#4d4d4d;}
+.Process table td{padding:10px;background:#fff;}
+.Process table .SubTd{background:#ecf7fc;font-weight:bold;width:18%;color:#1d67a5}
+.Process table table{text-align:left;width:30%;background:#a5d6f3;line-height:100%;color:#4d4d4d; background:#fff}
+.Process table table td{ text-align:left;padding:0px; background:#fff}
+
+.Process table td .Radio0{float:left;padding:0 10px;}
+
+.Stuff{width:100%;}
+.Stuff .NameList{width:100%;}
+.Stuff .NameList td{background:#f9fdff}
+.Stuff .Tree{width:100%;}
+.Stuff .Tree td{background:#fff}
+
+.Stuff .NameList ul{width:100%;text-align:left;padding:0 0 5px 0;border-bottom:1px solid #adcfe4}
+.Stuff .NameList ul li{box-sizing:border-box}
+.Stuff .NameList .Section{padding:5px 0 5px 15px;color:#456885;font-weight:bold}
+.Stuff .NameList .NameLi{padding:0 0 0 30px;color:#666}
+
+.View{padding:8px;font-size:18px;width:90%;margin:0 5%;border:1px solid #aaa;min-height:60px;}
+.View:focus{border:1px solid #e9c09f}
+
+.SubmitBar{width:100%;padding:8px 0;height:32px;text-align:center;}
+.SubmitBar p{margin:0 auto;width:200px}
+.SubmitBar p input{height:32px;line-height:32px;float:left;margin:0 4px;border:none;cursor:pointer;width:85px;font-weight:bold;text-align:center;text-shadow:0 1px #fff;float:left}
+
+.SubmitBar p .SendSure{background:url(../Images/SubmitNS.png);color:#ba1818;}
+.SubmitBar p .SendSure:hover{background:url(../Images/SubmitAS.png);}
+.SubmitBar p .ReturnSure{background:url(../Images/ReturnNS.png);color:#666;}
+.SubmitBar p .ReturnSure:hover{background:url(../Images/ReturnAS.png);}

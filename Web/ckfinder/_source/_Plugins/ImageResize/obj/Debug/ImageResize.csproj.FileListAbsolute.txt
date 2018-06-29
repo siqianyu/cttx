@@ -1,0 +1,7 @@
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\ImageResize\bin\Debug\CKFinder_ImageResize.dll
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\ImageResize\bin\Debug\CKFinder_ImageResize.pdb
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\ImageResize\bin\Debug\CKFinder.dll
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\ImageResize\bin\Debug\CKFinder.pdb
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\ImageResize\obj\Debug\ResolveAssemblyReference.cache
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\ImageResize\obj\Debug\CKFinder_ImageResize.dll
+E:\朱武涛\朱武涛\HZBZ\Web\ckfinder\_source\_Plugins\ImageResize\obj\Debug\CKFinder_ImageResize.pdb

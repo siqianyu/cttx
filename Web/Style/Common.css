@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+body{width:100%;background:url(../Images/TopBg.png) top repeat-x #fafdff;margin:0 auto;font-family:"宋体";font-size:12px;}
+li{list-style:none}
+img{border:none}
+input{outline:none}
+a{text-decoration:none}
+.Left{float:left}
+.NotNull{color:#f00;padding:0 5px}
+.Ltd{text-align:right}
+.Rtd{text-align:left}
+
+.Header{width:100%;height:106px;background:url(../Images/TopR.jpg) right top no-repeat}
+.LogoBar{width:100%;height:66px;overflow:hidden}
+.LogoBar .Logo{padding:4px 0 0 10px;}
+
+.LogoBar p{text-align:right;float:right;line-height:14px;padding:26px 10px;color:#fff;min-width:260px;}
+.LogoBar p span{float:left}
+.LogoBar p span a{color:#fff;padding:0 5px}
+.LogoBar p span a:hover{text-decoration:underline}
+.LogoBar p .Skin{padding:0 5px;float:left}
+
+.MenuBar{height:40px;width:100%;background:url(../Images/Alpha.png) left -2px no-repeat;overflow:hidden}
+.Menu{height:29px;padding:11px 0 0 0;float:left}
+.Menu a{float:left;width:97px;font-weight:bold;margin:0 0 0 3px;line-height:25px;padding:3px 0 0 0}
+.Menu .Active{background:url(../Images/MenuA.png) no-repeat;color:#a00b00;text-shadow:0 1px #ffeba5;border-bottom:1px solid #ff9022;text-align:center;}
+.Menu .Normal{background:url(../Images/MenuN.png) no-repeat;color:#fff;text-shadow:0 1px #005f95;border-bottom:1px solid #007bc2;text-align:center;}
+
+.Member{float:right;line-height:25px;padding:10px 10px 0 0}
+.Member img{float:right;padding:5px 0 0 0}
+.Member p{padding:0 8px;color:#fff;float:right}
+.Member p span{padding:0 4px;}
+.Member input{width:65px;height:25px;float:right;background:url(../Images/LogOutN.png) no-repeat;color:#9b0700;text-shadow:0 1px #ffe191;border:none; text-align:center;cursor:pointer;line-height:25px;}
+.Member input:hover{background:url(../Images/LogOutA.png) no-repeat;}
+
+.Main{width:100%;padding:11px 0 0 0;background:url(../Images/MainBg.png) left 1px repeat-x}
+
+.Frame{width:100%;vertical-align:top;border:none;text-align:left}
+.Frame .PartL{width:201px;vertical-align:top;overflow:hidden;float:left;display:block}
+.Frame .PartM{width:9px;overflow:hidden}
+.Frame .PartR{vertical-align:top;text-align:left;width:100%}
+.Frame .OpenBar{vertical-align:middle;width:10px;background:#ccedff;border:1px solid #cce1f8;border-right:1px solid #a5cee1;overflow:hidden;display:none}
+
+.MenuLT{width:157px;height:31px;padding:0 8px 0 36px;background:url(../Images/TitleL.png) no-repeat}
+.MenuLT p{text-align:left;font-weight:bold;color:#025696;float:left;line-height:30px;padding:1px 0 0 0}
+.MenuLT a{float:right;padding:6px 0 0 0}
+
+.MenuLC{width:191px;border:1px solid #cce1f8;background:#fcfeff;margin:2px 0 0 0;padding:4px;text-align:left;}
+.MenuLC p{line-height:30px;padding:2px 0 1px 45px;width:146px;float:left;margin:0 0 2px 0;font-weight:bold}
+.MenuLC .Act{background:url(../Images/MenuLA.png) no-repeat;color:#c20d00}
+.MenuLC .Nor{background:url(../Images/MenuLN.png) no-repeat;color:#5075a7}
+
+.MenuLC ul{width:167px;padding:5px 12px;float:left}
+.MenuLC ul li{line-height:27px;border-bottom:1px solid #cce1f8;background:url(../Images/RightArrN.png) 154px center no-repeat;float:left;width:167px;}
+.MenuLC ul li a{padding:0 0 0 40px;background:url(../Images/SecIco.png) 8px no-repeat;float:left;color:#52739f}
+
+.MenuLC ul li:hover{background:url(../Images/RightArrA.png) 154px center no-repeat;}
+.MenuLC ul li:hover a{color:#f82900}
+
+.PosiBar{width:100%;border:1px solid #9fcde9;line-height:30px;text-align:left;background:url(../Images/PosiBg.png) repeat;float:left}
+.PosiBar p{padding:0 0 0 38px;background:url(../Images/PosIco.png) 13px no-repeat;float:left;font-weight:bold;color:#3f71a9}
+
+.TableBox{width:100%;height:500px;}
+
+.Footer{width:100%;height:21px;background:#184b80;border:solid #002e45;border-width:1px 0}
+.Footer p{color:#fff;border-top:1px solid #3379b4;line-height:20px;width:100%}
+.Footer p a{color:#fff}
+.Footer p a:hover{text-decoration:underline;}
+
+.SosoBar{height:25px;width:100%;background:#f6fcff;border:1px solid #bbd5e7;margin:8px 0 10px 0;padding:4px 0;overflow:hidden}
+.Add{padding:0 10px;background:url(../Images/AddBgN.png) repeat-x;border:1px solid #ea9b60;float:right;margin:2px 5px 1px 0;width:48px;height:20px;overflow:hidden}
+.Add input{line-height:18px;padding:2px 0 0 16px;height:18px;background:url(../Images/Add.png) left 4px no-repeat;color:#ba1818;text-shadow:0 1px #fff;border:none;cursor:pointer;}
+.Add:hover,.Add:active{background:url(../Images/AddBgA.png) repeat-x;}
+.Dele{padding:0 10px;background:url(../Images/DeleBgN.png) repeat-x;border:1px solid #a5d9f4;float:right;margin:2px 5px 1px 0;width:68px;height:20px;overflow:hidden}
+.Dele input{line-height:18px;padding:2px 0 0 16px;height:18px;background:url(../Images/Dele.png) left 4px no-repeat;color:#2f72b6;text-shadow:0 1px #fff;cursor:pointer;border:none;}
+.Dele:hover,.Dele:active{background:url(../Images/DeleBgA.png) repeat-x;}
+ 
+.Soso{float:left}
+.Sele{padding:0 0 0 10px;float:left;line-height:25px;}
+.Sele span{padding:0 10px 0 5px;float:left;color:#4d86c6}
+.Sele input{float:left;margin:6px 0 0 0}
+.Sele b{float:left;color:#f87308}
+ 
+.Query{float:left}
+.Query span{padding:0 0 0 10px;font-weight:bold;color:#2871a4;float:left; line-height:25px;}
+.Query input{height:20px;line-height:20px;padding:0 0 0 5px;background:#fff;border:#ccc 1px solid;float:left;margin:2px 0 0}
+.Query select{float:left;margin:2px 0 0}
+.Query .QueryBut{border:none;width:65px;height:25px;background:url(../Images/LogOutN.png);color:#9b0700;text-shadow:0 1px #ffe191;margin:0 10px;padding:0;text-align:center;cursor:pointer}
+.Query .QueryBut:hover{background:url(../Images/LogOutA.png);}
+
+.CommonButon{
+	background:url(../Images/GrayBorder.png) repeat-x;height:24px;line-height:24px;border:1px solid #a0a0a0;color:#333; text-shadow:0 1px #fff;padding:0 10px;
+}
+
+/*修改yly@20140710_start*/
+.MenuLC .Act{background:url(../Images/MenuLN.png) no-repeat;color:#5075a7;cursor:pointer;}
+.MenuLC .current{background:url(../Images/MenuLA.png) no-repeat;color:#c20d00}
+.MenuLC ul{width:167px;padding:5px 12px;float:left;display:none}
+/*修改_end*/
+
+
+/*2015-3-10*/
+#Main{ height:1350px}

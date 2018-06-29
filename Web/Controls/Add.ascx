@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Add.ascx.cs" Inherits="Sysadmin_Controls_Add" %>
+<asp:Button ID="btnAdd" runat="server" Text=" 添 加 " OnClick="btnAdd_Click" CssClass="Green InputClass"/>

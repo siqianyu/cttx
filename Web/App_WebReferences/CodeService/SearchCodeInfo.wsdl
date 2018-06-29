@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx">
+      <s:element name="GetAuthorizationTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthorizationTicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuthorizationTicketResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchJGDMList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jgdm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jgmc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jglx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jgdz" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jjhy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jjlx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xzqh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fddbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zjhm" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchJGDMListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchJGDMListResult" type="tns:ListJGMC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ListJGMC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataSetJGMC">
+            <s:complexType>
+              <s:sequence>
+                <s:element ref="s:schema" />
+                <s:any />
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetJGLX">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetJGLXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetJGLXResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJJLX">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetJJLXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetJJLXResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJJHY">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetJJHYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetJJHYResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJgdmDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="keyword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJgdmDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetJgdmDetailResult" type="tns:JgdmInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="JgdmInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jgdm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jgmc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jglx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jgdz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="yzbm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fddbr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zjhm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jjhy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jjlx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pzjgmc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zch" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bzrq" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="zfrq" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="zcrq" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="dhhm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jyfw" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zczj" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hbzl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="xzqh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zgdm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zgmc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="njrq" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="njqx" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAuthorizationTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuthorizationTicket" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizationTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuthorizationTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchJGDMListSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchJGDMList" />
+  </wsdl:message>
+  <wsdl:message name="SearchJGDMListSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchJGDMListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetJGLXSoapIn">
+    <wsdl:part name="parameters" element="tns:GetJGLX" />
+  </wsdl:message>
+  <wsdl:message name="GetJGLXSoapOut">
+    <wsdl:part name="parameters" element="tns:GetJGLXResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetJJLXSoapIn">
+    <wsdl:part name="parameters" element="tns:GetJJLX" />
+  </wsdl:message>
+  <wsdl:message name="GetJJLXSoapOut">
+    <wsdl:part name="parameters" element="tns:GetJJLXResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetJJHYSoapIn">
+    <wsdl:part name="parameters" element="tns:GetJJHY" />
+  </wsdl:message>
+  <wsdl:message name="GetJJHYSoapOut">
+    <wsdl:part name="parameters" element="tns:GetJJHYResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetJgdmDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetJgdmDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetJgdmDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetJgdmDetailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SearchCodeInfoSoap">
+    <wsdl:operation name="GetAuthorizationTicket">
+      <wsdl:input message="tns:GetAuthorizationTicketSoapIn" />
+      <wsdl:output message="tns:GetAuthorizationTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchJGDMList">
+      <wsdl:input message="tns:SearchJGDMListSoapIn" />
+      <wsdl:output message="tns:SearchJGDMListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJGLX">
+      <wsdl:input message="tns:GetJGLXSoapIn" />
+      <wsdl:output message="tns:GetJGLXSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJJLX">
+      <wsdl:input message="tns:GetJJLXSoapIn" />
+      <wsdl:output message="tns:GetJJLXSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJJHY">
+      <wsdl:input message="tns:GetJJHYSoapIn" />
+      <wsdl:output message="tns:GetJJHYSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJgdmDetail">
+      <wsdl:input message="tns:GetJgdmDetailSoapIn" />
+      <wsdl:output message="tns:GetJgdmDetailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SearchCodeInfoSoap" type="tns:SearchCodeInfoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAuthorizationTicket">
+      <soap:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetAuthorizationTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchJGDMList">
+      <soap:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/SearchJGDMList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJGLX">
+      <soap:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetJGLX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJJLX">
+      <soap:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetJJLX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJJHY">
+      <soap:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetJJHY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJgdmDetail">
+      <soap:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetJgdmDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SearchCodeInfoSoap12" type="tns:SearchCodeInfoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAuthorizationTicket">
+      <soap12:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetAuthorizationTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchJGDMList">
+      <soap12:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/SearchJGDMList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJGLX">
+      <soap12:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetJGLX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJJLX">
+      <soap12:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetJJLX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJJHY">
+      <soap12:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetJJHY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJgdmDetail">
+      <soap12:operation soapAction="http://60.191.1.134:2585/CodeService/SearchCodeInfo.asmx/GetJgdmDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SearchCodeInfo">
+    <wsdl:port name="SearchCodeInfoSoap" binding="tns:SearchCodeInfoSoap">
+      <soap:address location="http://122.224.206.147:2585/CodeService/SearchCodeInfo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SearchCodeInfoSoap12" binding="tns:SearchCodeInfoSoap12">
+      <soap12:address location="http://122.224.206.147:2585/CodeService/SearchCodeInfo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

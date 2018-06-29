@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0}
+body{width:100%; font-family:"宋体";font-size:14px;}
+a{text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur());}
+img{border:none}
+li{list-style:none}
+.Blue{color:#2b65a4;}
+.Left{float:left}
+
+.Default{width:100%; background:#fafdff;padding:10px 0}
+.Default table{width:100%;}
+
+.LeftTd{width:275px;}
+
+.Info{width:257px; margin:0 2px; border:1px solid #e3e3e3; background:#f6f6f6; padding:12px 6px;height:78px;}
+.Info img{width:71px;height:71px;padding:3px;background:url(../Images/IconBg.png);float:left}
+.Info p{width:170px;padding:5px 0 0 10px;line-height:23px;color:#454545;text-align:left;float:left}
+
+.LeftBar{width:275px;margin:8px 0 0 0;display:inline; background:url(../Images/LeftBgM.png) repeat-y;}
+.LeftBarT{width:249px;background:url(../Images/LeftBgT.png) top no-repeat;min-height:415px;padding:13px; text-align:left}
+.LeftBarB{height:45px; width:275px; background:url(../Images/LeftBgB.png)}
+
+.LeftBarT .Title{width:213px;padding:0 0 0 36px;background:url(../Images/LeftT.png);line-height:32px;background:url(../Images/LeftT.png);color:#2b65a4;font-weight:bold; font-size:12px;float:left}
+.LeftBarT ul{padding:10px 6px;width:237px; float:left}
+.LeftBarT ul li{width:237px;line-height:28px;}
+.LeftBarT ul li:hover a{color:#e10000;}
+.LeftBarT ul li a{color:#323232;line-height:28px;}
+.LeftBarT ul li a:hover{color:#e10000;}
+.LeftBarT ul li .TaskN{width:167px;padding:0 0 0 10px;background:url(../Images/ListN.png) left 11px no-repeat;float:left}
+.LeftBarT ul li .TaskN:hover{background:url(../Images/ListA.png) left 11px no-repeat;}
+.LeftBarT ul li .Opera{width:50px;padding:0 0 0 10px;float:left}
+
+.LeftBarT ul li .Comm{width:227px; padding:0 0 0 10px;background:url(../Images/ListN.png) left 11px no-repeat;float:left}
+.LeftBarT ul li .Comm:hover{background:url(../Images/ListA.png) left 11px no-repeat;}
+.LeftBarT ul li .All{color:#006cd5;text-decoration:underline;width:227px; padding:0 0 0 10px;background:url(../Images/ListN.png) left 11px no-repeat;float:left}
+.LeftBarT ul li .All:hover{color:#e10000;background:url(../Images/ListA.png) left 11px no-repeat;}
+
+.TaskBox{height:102px;border:1px solid #cae1f3;background:#f4faff;width:100%;}
+.TaskBox table{width:100%;}
+.TaskBox table td{background:url(../Images/DivLine.png) right no-repeat;text-align:center}
+.TaskBox table .Task_div{height:102px; text-align:center;padding:0 5px}
+.TaskBox table .Task_div a{ padding:65px 0 0 0;line-height:37px;font-weight:bold;color:#434343;float:left;width:100%;white-space:nowrap;}
+.TaskBox table .Task_div a:hover{color:#e10000;text-decoration:underline}
+
+.TaskBox table .Task_div .Tk1{ background:url(../Images/IconT1.png) center 10px no-repeat}
+.TaskBox table .Task_div .Tk1:hover{background:url(../Images/IconT1.png) center 8px no-repeat}
+.TaskBox table .Task_div .Tk2{ background:url(../Images/IconT2.png) center 10px no-repeat}
+.TaskBox table .Task_div .Tk2:hover{background:url(../Images/IconT2.png) center 8px no-repeat}
+.TaskBox table .Task_div .Tk3{ background:url(../Images/IconT3.png) center 10px no-repeat}
+.TaskBox table .Task_div .Tk3:hover{background:url(../Images/IconT3.png) center 8px no-repeat}
+.TaskBox table .Task_div .Tk4{ background:url(../Images/IconT4.png) center 10px no-repeat}
+.TaskBox table .Task_div .Tk4:hover{background:url(../Images/IconT4.png) center 8px no-repeat}
+.TaskBox table .Task_div .Tk5{ background:url(../Images/IconT5.png) center 10px no-repeat}
+.TaskBox table .Task_div .Tk5:hover{background:url(../Images/IconT5.png) center 8px no-repeat}
+.TaskBox table .Task_div .Tk6{ background:url(../Images/IconT6.png) center 10px no-repeat}
+.TaskBox table .Task_div .Tk6:hover{background:url(../Images/IconT6.png) center 8px no-repeat}
+.TaskBox table .Task_div .Tk7{ background:url(../Images/IconT7.png) center 10px no-repeat}
+.TaskBox table .Task_div .Tk7:hover{background:url(../Images/IconT7.png) center 8px no-repeat}
+.TaskBox table .Task_div .Tk8{ background:url(../Images/IconT8.png) center 10px no-repeat}
+.TaskBox table .Task_div .Tk8:hover{background:url(../Images/IconT8.png) center 8px no-repeat}
+
+.Psnal{width:100%;padding:9px 0 0 0;}
+.PsnalT{line-height:31px;background:url(../Images/RightT.png) repeat-x;border:1px solid #dbdbdb;width:100%;height:31px}
+.PsnalT p{padding:0 0 0 39px;background:url(../Images/IconM.png) 12px no-repeat;font-weight:bold;color:#2b65a4;text-align:left;float:left;font-size:12px;}
+.PsnalT .Slide{width:90px;padding:0 20px 0 0;float:right;height:31px;}
+.PsnalT .Slide a{width:17px;height:16px; padding:7px 0 8px 0;float:left}
+.PsnalT .Slide span{ padding:0 10px; float:left; font-size:12px;color:#434343}
+.PsnalT .Slide .Prev{ background:url(../Images/Prev.png) left 7px no-repeat}
+.PsnalT .Slide .Next{ background:url(../Images/Next.png) left 7px no-repeat}
+
+.TkBoard{margin:8px 0 0 0; width:100%;background:#dbdbdb; text-align:center; float:left}
+.TkBoard .Ttr{ font-weight:bold;color:#434343}
+.TkBoard .Ttr td{background:#fff;line-height:33px;}
+
+.TkBoard td{line-height:45px;background:#f4fbff;}
+.TkBoard td a{color:#535353}
+.TkBoard td a:hover{color:#e10000; text-decoration:underline}
+.TkBoard td a:hover span{color:#e10000; text-decoration:underline}
+.TkBoard td .TkNum{color:#000}
+.TkBoard td .TkSum{color:#535353}
+
+.TkBoard .Even{}
+.TkBoard .Even td{background:#fff9f4;}
+
+.DropBar{width:100%;height:28px;float:left; font-size:12px;}
+.DropBar a{line-height:26px;padding:0 13px; background:url(../Images/DropABg.png); border:1px solid #c5dbec;margin:0 5px 0 0;display:inline;float:left; font-weight:bold; color:#2e6e9e}
+.DropBar a:hover{border:1px solid #74b2e2}
+.DropBar a span{color:#f52e00; padding:0 4px}
+
+.DropBar .Safe{background:#f5f9fd;border:1px solid #cce4f6}
+.DropBar .Safe:hover{border:1px solid #73c0ff}
+
+.DropList{width:807px;background:#e3f1ff;height:375px;padding:5px 0 5px 5px;font-size:12px;color:#4f4f4f;float:left}
+.DropListC{width:802px;height:375px;overflow-x:hidden;overflow-y:scroll;float:left;padding:0 5px 0 0}
+.DropList table{width:100%; background:#a6c9e2;text-align:center;line-height:150%}
+.DropList table td{background:#f9fafb;padding:14px 8px}
+
+.DropList table .CpName{color:#2e6e9e;font-weight:bold;text-align:left;background:#f2f9ff}
+.DropList table .CpName span{color:#f46200}
+
+.DropList table tr:hover td{ background:url(../Images/TdBg.png) left center repeat-x #eaf5fe}
+
+.DropList table .DpTTr{font-weight:bold;color:#2e6e9e}
+.DropList table .DpTTr td{background:url(../Images/TdBg.png) left center repeat-x #eaf5fe;padding:5px 8px}
+.DropList table .RankNum{ background:url(../Images/TdBg.png) left center repeat-x #eaf5fe;font-weight:bold;color:#2e6e9e; font-size:14px}
+
+.Staff{width:940px;float:left; font-size:12px;}
+.Staff .LtBar{width:296px;float:left;border:1px solid #c5dbec;background:#f7fbff;}
+.Staff .RtBar{width:600px;border:1px solid #a6c9e2;margin:0 0 0 10px;display:inline; float:left; background:#fdfeff}
+
+.Staff .LtBar ul{width:288px; padding:7px;float:left}
+.Staff .LtBar ul li{width:75px;height:97px;border:1px solid #d3e7f6;float:left;padding:2px;background:#fff;margin:7px;display:inline}
+.Staff .LtBar ul img{width:75px;height:75px;float:left}
+.Staff .LtBar ul span{background:#d1e8f9;color:#0070a3;line-height:20px;float:left;width:75px;margin:2px 0 0 0}
+.Staff .LtBar ul li:hover{border:1px solid #ffaf6f;}
+.Staff .LtBar ul li:hover span{background:#f9e3d1;color:#a35800;}
+
+.Staff .RtBar ul{width:618px; padding:8px;float:left}
+.Staff .RtBar ul li{width:75px;height:97px;border:1px solid #d3e7f6;float:left;padding:2px;background:#fff;margin:8px;display:inline}
+.Staff .RtBar ul img{width:75px;height:75px;float:left}
+.Staff .RtBar ul span{background:#d1e8f9;color:#0070a3;line-height:20px;float:left;width:75px;margin:2px 0 0 0}
+.Staff .RtBar ul li:hover{border:1px solid #ffaf6f;}
+.Staff .RtBar ul li:hover span{background:#f9e3d1;color:#a35800;}

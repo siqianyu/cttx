@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+body{width:99%;margin:0 auto;font-family:"宋体";font-size:12px;}
+li{list-style:none}
+img{border:none}
+input{outline:none}
+a{text-decoration:none}
+.Left{float:left}
+
+.Gray{color:#5a5a5a;}
+.LightGray{color:#969696}
+.Green{color:#0f7e00;}
+.LightGr{color:#2aa21a;}
+.DarkRed{color:#b22300}
+.Red{color:#f00}
+
+.PosiBar{width:100%;border:1px solid #9fcde9;line-height:30px;text-align:left;background:url(../Images/PosiBg.png) repeat;float:left}
+.PosiBar p{padding:0 0 0 38px;background:url(../Images/PosIco.png) 13px no-repeat;float:left;font-weight:bold;color:#3f71a9}
+
+.TableBox{width:100%;}
+
+ .SosoBar{height:auto;width:100%;background:#f6fcff;border:1px solid #bbd5e7;margin:8px 0 10px 0;padding:4px 0;}
+ .Add{padding:0 10px;background:url(../Images/AddBgN.png) repeat-x;border:1px solid #ea9b60;float:right;margin:2px 5px 1px 0;width:48px;height:20px;overflow:hidden}
+ .Add input{line-height:18px;padding:2px 0 0 16px;height:18px;background:url(../Images/Add.png) left 4px no-repeat;color:#ba1818;text-shadow:0 1px #fff;border:none;cursor:pointer;}
+ .Add:hover,.Add:active{background:url(../Images/AddBgA.png) repeat-x;}
+ .Dele{padding:0 10px;background:url(../Images/DeleBgN.png) repeat-x;border:1px solid #a5d9f4;float:right;margin:2px 5px 1px 0;width:68px;height:20px;overflow:hidden}
+ .Dele input{line-height:18px;padding:2px 0 0 16px;height:18px;background:url(../Images/Dele.png) left 4px no-repeat;color:#2f72b6;text-shadow:0 1px #fff;cursor:pointer;border:none;}
+ .Dele:hover,.Dele:active{background:url(../Images/DeleBgA.png) repeat-x;}
+ 
+ .Soso{float:left;width:100%}
+ .Sele{padding:0 0 0 10px;float:left;line-height:25px;}
+ .Sele span{padding:0 10px 0 5px;float:left;color:#4d86c6}
+ .Sele input{float:left;margin:6px 0 0 0}
+ .Sele b{float:left;color:#f87308}
+ 
+ .Query{float:left;width:100%}
+ .Query span{padding:0 0 0 10px;font-weight:bold;color:#2871a4;float:left; line-height:25px;}
+ .Query input{height:20px;line-height:20px;padding:0 0 0 5px;background:#fff;border:#ccc 1px solid;float:left;margin:2px 0 0}
+ .Query select{float:left;margin:2px 0 0}
+ .Query .QueryBut{border:none;width:65px;height:25px;background:url(../Images/LogOutN.png);color:#9b0700;text-shadow:0 1px #ffe191;margin:0 10px;padding:0;text-align:center;cursor:pointer}
+ .Query .QueryBut:hover{background:url(../Images/LogOutA.png);}
+
+.Query .InputClass{background:url(../Images/Opera.png) repeat-x;border:1px solid #d0d0d0;float:left;margin:0 0 0 7px;display:inline;padding:0 0;line-height:22px; height:22px; overflow:hidden;}
+.Query .InputClass:hover{text-decoration:underline}
+ 
+ .CommonButon{
+	background:url(../Images/GrayBorder.png) repeat-x;height:24px;line-height:24px;border:1px solid #a0a0a0;color:#333; text-shadow:0 1px #fff;padding:0 10px;
+}

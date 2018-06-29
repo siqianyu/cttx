@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<chart palette="2" yaxisname="" caption="" xaxisname="" xaxismaxvalue="39" xaxisminvalue="0" bgcolor="FFFFFF" legendshadow="1" legendborderalpha="1" canvasborderthickness="1" canvasborderalpha="1" divlinealpha="2" showregressionline="1" yaxisminvalue="0" yaxismaxvalue="1" numbersuffix="" animation="0">
+  <categories verticallinethickness="1" verticallinealpha="10">
+    <category label="3.9" x="3.9" showverticalline="1" />
+    <category label="7.8" x="7.8" showverticalline="1" />
+    <category label="11.7" x="11.7" showverticalline="1" />
+    <category label="15.6" x="15.6" showverticalline="1" />
+    <category label="19.5" x="19.5" showverticalline="1" />
+    <category label="23.4" x="23.4" showverticalline="1" />
+    <category label="27.3" x="27.3" showverticalline="1" />
+    <category label="31.2" x="31.2" showverticalline="1" />
+    <category label="35.1" x="35.1" showverticalline="1" />
+    <category label="39" x="39" showverticalline="1" />
+  </categories>
+  <dataset seriesname="" color="#1790E1" showplotborder="1" anchorSides="4" anchorRadius="4" anchorBgColor="#F8BD19" anchorBorderColor="#F8BD19">
+    <set y="0" x="0" />
+    <set y="0.032" x="1" />
+    <set y="0.060" x="2" />
+    <set y="0.180" x="3" />
+    <set y="0.297" x="10" />
+    <set y="0.601" x="20" />
+    <set y="0.901" x="30" />
+  </dataset>
+</chart>
