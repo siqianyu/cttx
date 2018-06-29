@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<title>隐私保护--才通天下</title>
+		<link href="style/common.css" rel="stylesheet"/>
+		<link href="style/login.css" rel="stylesheet"/>
+		<link href="style/animate.min.css" rel="stylesheet" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		
+	</head>
+	<body>
+		<!--header start-->
+		<div class="header">
+			<a onclick="history.back()"><img src="img/return_icon.png"></a>
+			<span>隐私保护</span>
+		</div>			
+		<!--header end-->
+		<!--privacy start-->
+		<div class="privacy">
+			<ul>
+				<li class="pvivacy-setting">
+					<b>姓名</b>
+					<span class="public readonly"><i></i></span>
+				</li>
+				<li class="pvivacy-setting">
+					<b>昵称</b>
+					<span><i></i></span>
+				</li>
+				<li class="pvivacy-setting">
+					<b>性别</b>
+					<span><i></i></span>
+				</li>
+				<li class="pvivacy-setting">
+					<b>出生日期</b>
+					<span><i></i></span>
+				</li>
+				<li class="pvivacy-setting">
+					<b>职历</b>
+					<span><i></i></span>
+				</li>
+				<li class="pvivacy-setting">
+					<b>我的画像</b>
+					<span class="readonly"><i></i></span>
+				</li>
+			</ul>
+		</div>
+		<!--privacy end-->
+		<div class="login-item wow fadeInUp" style="animation-delay: .4s;-webkit-animation-delay: .4s;margin-top:1rem">
+			<button class="login-btn" id='register-btn'>完成提交</button>
+		</div>
+	</body>
+</html>
+<script src="js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+<script>
+	$(document).ready(function(){
+		var ht = $(window).height();
+		$('.privacy').css('min-height',ht - 150);		
+//		点击切换开启和关闭的时候判断是否可以操作		
+		$('.pvivacy-setting span').click(function(){
+			if($(this).hasClass('readonly')){
+				return;
+			}else{
+				$(this).toggleClass('public');
+			}			
+		});
+	})
+</script>

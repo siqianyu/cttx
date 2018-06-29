@@ -1,0 +1,62 @@
+.index-header{width:100%;background: url(../img/index_banner.jpg) center top no-repeat;background-size:cover;height:10rem;position: relative;margin-bottom:4.3rem}
+.index-header .logo{height:1.4rem;width:100%;margin-top:.6rem;float:left}
+.index-header .logo img{height:1.4rem;margin: 0 auto;display: inline-block;}
+
+.index-info-menu{position: absolute;bottom: -3.6rem;height:4rem;left:5%;width:90%;background:#fff;border-radius: 6px;box-shadow:0  1px 5px rgba(0,0,0,.15);}
+.index-info-menu li{width:33%;float:left;font-size: .75rem;color:#fd9f25;border-right:1px dashed #e0e0e0;margin:.45rem 0}
+.index-info-menu li span{width:4rem;display: inline-block;padding-top:2rem;margin:0 auto}
+.index-info-menu li span.index-menu1{background: url(../img/index_info_icon.png) 1rem .3rem no-repeat;background-size:auto 1.5rem;}
+.index-info-menu li span.index-menu2{background: url(../img/index_info_icon.png) -6.9rem .3rem no-repeat;background-size:auto 1.5rem;}
+.index-info-menu li span.index-menu3{background: url(../img/index_info_icon.png) -14.8rem .3rem no-repeat;background-size:auto 1.5rem;}
+
+/*以下是新的首页焦点图样式*/
+
+.carousel-image-box{width: 90%;overflow-x:hidden;margin-left:5%;border-radius:6px}
+.carousel-image{overflow: hidden;position: relative;height:180px;}
+.carousel-image div{position: absolute;height:180px;width:100%}
+.carousel-image a{display: block;float:left;height: 180px;transition: .2s all ease-out;}
+/*.carousel-image a img{width:100%;height:240px;margin:0;border:none;}*/
+.carousel-num {position: absolute;bottom:10px;}
+.carousel-num i{cursor: pointer; font-style:normal;background:rgba(255,255,255,.8);font-size: 0;height:.4rem;width:.4rem;border-radius:  100%;overflow: hidden;margin-left: .2rem;display: inline-block;transition:.2s all;}
+.carousel-num i.current{background: #fdc430;}
+
+/*首页排行样式*/
+
+.index-body{margin-bottom: 5rem;display: block;}
+
+.index-rank{width:90%;padding:.4rem 0;margin:.8rem 5% 4rem 5%;border-radius:6px;box-shadow:0  1px 5px rgba(0,0,0,.15);background: #fff;}
+.index-rank-title{width:95%;margin:0 2.5%;font-size: .65rem;line-height: 1.6rem;background: #f2f2f2;border-radius:4px;color:#898989}
+.index-rank-title span{width:20%;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;float:left;border-bottom:2px solid #f2f2f2;float:left;padding-top:.2rem}
+.index-rank-title span.active{color:#ff9807;border-bottom:2px solid #ff9807}
+
+.index-rank-table{width:95%;margin:.5rem 2.5%;float:left;vertical-align: middle;}
+.index-rank-table td{padding:.2rem 0;border-bottom: 1px dashed #f0f0f0;font-size: .65rem;}
+.index-rank-table td .rank-num{background:url(../img/cup.png) center no-repeat;background-size:1.5rem auto;line-height: 1.2rem;padding:.6rem 0 1rem 0;color:#fff;width:2rem;display: inline-block;font-size: .8rem;}
+.index-rank-table td .rank-icon{width:3rem;height:3rem;border:2px solid #dbdbdb;border-radius:6px;overflow: hidden;display: inline-block;}
+.index-rank-table td .rank-icon img{width:100%;}
+.index-rank-table td.rank-name,.index-rank-table td.rank-item-num{padding-left:.4rem;text-align: left;}
+.index-rank-table td.rank-name{width:4rem;color:#898989;}
+.index-rank-table td.rank-item-num{color:#ff8181;font-size: .9rem;}
+
+
+.sub-title{width:94%;line-height: 1.8rem;text-align: left;padding:0 3%}
+.sub-title span{color:#898989;font-size: .75rem;float:left}
+.sub-title span i{width:.2rem;height:.8rem;background: #fd9f25;float:left;margin:.5rem .5rem 0 0;}
+.sub-title b{float:right;font-weight: normal;font-size: .65rem;}
+.sub-title b i{float:left;width:.35rem;height:.35rem;border-radius: 100%;margin:.6rem .2rem 0 .2rem;}
+
+.sub-title b.orange{color:#db8703}
+.sub-title b.orange i{background:#db8703}
+.sub-title b.green{color:#0cbae2}
+.sub-title b.green i{background:#0cbae2}
+.sub-title b.red{color:#fd4a46}
+.sub-title b.orange i{background:#fd4a46}
+
+
+
+.index-chart{width:90%;margin:.5rem 2.5%;background: #fff;border-radius: 6px;box-shadow:0  1px 5px rgba(0,0,0,.15);padding:.2rem 0}
+.index-chart-box{width:94%;padding:.4rem 3%;position: relative;}
+.index-chart-box .chart{width:100%;padding-top:.8rem;min-height: 5rem;}
+.index-chart-box .chart-share{position:absolute;bottom:1.5rem;right:3%;z-index:99;width:2rem}
+
+

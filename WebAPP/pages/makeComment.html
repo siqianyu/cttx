@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<title>点评--才通天下</title>
+		<link href="style/common.css" rel="stylesheet"/>
+		<link href="style/login.css" rel="stylesheet"/>
+		<link href="style/animate.min.css" rel="stylesheet" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		
+	</head>
+	<body>
+		<!--header start-->
+		<div class="header">
+			<a onclick="history.back()"><img src="img/return_icon.png"></a>
+			<span>点评</span>
+		</div>			
+		<!--header end-->
+		<!--privacy start-->
+		<div class="comment">
+			<p class="comment-title left wow fadeInUp">请输入最诚挚的点评</p>
+			<textarea class="comment-fill wow fadeInUp" placeholder="请输入点评，至少20个字"></textarea>
+			<div class="comment-tag-box wow fadeInUp">
+				<a class="comment-tag">活泼开朗</a>
+				<a class="comment-tag">幽默</a>
+				<a class="comment-tag">冰雪聪明</a>
+				<a class="comment-tag">专业</a>
+			</div>
+			<!--个人画像点进来不显示下面的评分-->
+			<ul class="comment-mark left wow fadeInUp">
+				<li>
+					<span>聪明水平评价</span>
+					<b class="stars">
+						<i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
+					</b>
+				</li>
+				<li>
+					<span>沟通能力评价</span>
+					<b class="stars"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></b>
+				</li>
+				<li>
+					<span>综合能力评价</span>
+					<b class="stars"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></b>
+				</li>
+				<li>
+					<span>与他合作意愿</span>
+					<b class="stars"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></b>
+				</li>
+			</ul>
+		</div>
+		<!--privacy end-->
+		<div class="login-item wow fadeInUp" style="animation-delay: .4s;-webkit-animation-delay: .4s;margin-top:1rem">
+			<button class="login-btn" id='register-btn'>保存</button>
+		</div>
+	</body>
+</html>
+<script src="js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+<script>
+	$(document).ready(function(){
+		var ht = $(window).height();
+		$('.comment').css('min-height',ht - 150);	
+		$('.comment-tag').click(function(){
+			$(this).toggleClass('chosen');
+		})
+	})
+</script>
+<script>
+    $(function(){
+        var stars = $('.stars');
+        var Len = stars.length;
+        //遍历每个评分的容器
+        for(i=0;i<Len;i++){
+            //每次触发事件，清除该项父容器下所有子元素的样式所有样式
+            function clearAll(obj){
+                obj.parent().children('i').removeClass('on');
+            }
+            stars.eq(i).find('i').click(function(){
+                var num = $(this).index();
+                clearAll($(this));
+                //当前包括前面的元素都加上样式
+                $(this).addClass('on').prevAll('i').addClass('on');
+                //给隐藏域input赋值
+                $(this).siblings('input').val(num);
+            });
+        }
+    })
+</script>
