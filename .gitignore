@@ -1,1 +1,15 @@
 /.vs
+/NG.CachHelper/obj
+/NG.WeiXin/obj
+/StarTech.Adapter/obj
+/Startech.Article/obj
+/Startech.Category/obj
+/StarTech.ELife/obj
+/Startech.Link/obj
+/Startech.Log/obj
+/Startech.Member/obj
+/Startech.News/obj
+/StarTech.Order/obj
+/StarTech.Util/obj
+/Startech.Utils/obj
+/TestApplication/obj
