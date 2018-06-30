@@ -1,0 +1,586 @@
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+==========================<br>#2018-06-30 16:02:46<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&_search=false&nd=1530345766215&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:02:47<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&_search=false&nd=1530345767116&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:02:48<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&_search=false&nd=1530345767973&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:02:57<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345777987&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:00<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345780627&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:01<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345781251&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:01<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345781442&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:01<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345781642&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:01<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345781802&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:02<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345781972&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:02<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345782140&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:02<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345782298&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:02<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345782748&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:02<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345782932&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:24<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&_search=false&nd=1530345804705&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:31<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345811955&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:03:37<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345811955&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:04:10<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345850027&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:04:11<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&searchfilter=activity_title$$_$$_activity_status$$_$$_if_approved$$&_search=false&nd=1530345851482&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:b757adde-0b46-43fc-a0a7-adda374511d4
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:04:14<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&_search=false&nd=1530345854328&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:f26a0894-24f2-439d-b748-418a75eb3dfc
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:04:15<br>==========================<br>#错误发生位置： http://localhost:8000/AppModules/Activity/ActivityList.aspx?flag=list&_search=false&nd=1530345855117&rows=20&page=1&sidx=activity_id&sord=desc<br>#错误消息： 列名 'remaks' 无效。<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 列名 'remaks' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbCommand command)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(IDbConnection connection, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteSPDataset(String spName, IDataParameter[] commandParameters)
+   在 PaginationUtility.GetPaginationList(String fields, String viewtablesql, String filter, String sort, Int32 currentPageIndex, Int32 pageSize, Int32& recordCount) 位置 e:\__8_才通天下\git版\cttx\Web\App_Code\PaginationUtility.cs:行号 32
+   在 AppModules_Member_MemberList.GetList() 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 47
+   在 AppModules_Member_MemberList.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\AppModules\Activity\ActivityList.aspx.cs:行号 21
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:f26a0894-24f2-439d-b748-418a75eb3dfc
+Error Number:207,State:1,Class:16<br><br><br>
+==========================<br>#2018-06-30 16:10:47<br>==========================<br>#错误发生位置： http://localhost:8000/Main.aspx?rootMenuId=1<br>#错误消息： 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。<br>#Stack Trace：<br>System.InvalidOperationException: 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText)
+   在 StarTech.Adapter.IACenter.GetGroupIdsByUserId(Int32 userId) 位置 E:\__8_才通天下\git版\cttx\StarTech.Adapter\IACenter.cs:行号 62
+   在 StarTech.Adapter.IACenter.GetAllMenusByUserId(Int32 userId) 位置 E:\__8_才通天下\git版\cttx\StarTech.Adapter\IACenter.cs:行号 76
+   在 Main.BindRootMenu() 位置 e:\__8_才通天下\git版\cttx\Web\Main.aspx.cs:行号 22
+   在 Main.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\Main.aspx.cs:行号 16
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br><br><br>
+==========================<br>#2018-06-30 16:11:21<br>==========================<br>#错误发生位置： http://localhost:8000/Main.aspx?rootMenuId=1<br>#错误消息： 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)<br>#Stack Trace：<br>System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, IDataParameter[] commandParameters)
+   在 StarTech.DBUtility.AdoHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText)
+   在 StarTech.Adapter.IACenter.GetGroupIdsByUserId(Int32 userId) 位置 E:\__8_才通天下\git版\cttx\StarTech.Adapter\IACenter.cs:行号 62
+   在 StarTech.Adapter.IACenter.GetAllMenusByUserId(Int32 userId) 位置 E:\__8_才通天下\git版\cttx\StarTech.Adapter\IACenter.cs:行号 76
+   在 Main.BindRootMenu() 位置 e:\__8_才通天下\git版\cttx\Web\Main.aspx.cs:行号 22
+   在 Main.Page_Load(Object sender, EventArgs e) 位置 e:\__8_才通天下\git版\cttx\Web\Main.aspx.cs:行号 16
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20<br><br><br>

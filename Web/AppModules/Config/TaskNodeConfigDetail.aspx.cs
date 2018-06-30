@@ -22,13 +22,13 @@ public partial class AppModules_Member_MemberDetail : StarTech.Adapter.StarTechP
                 node_id.Value = KillSqlIn.Form_ReplaceByString(Request.QueryString["id"], 20);
                 if (node_id.Value == "")
                     return;
-                GetNode(node_id.Value);
+                GetInfo(node_id.Value);
             }
         }
 
     }
 
-    protected void GetNode(string id)
+    protected void GetInfo(string id)
     {
         string strSQL = "select * from t_task_node_config where node_id='" + id + "';";
         DataSet ds = ado.ExecuteSqlDataset(strSQL);
@@ -63,8 +63,9 @@ public partial class AppModules_Member_MemberDetail : StarTech.Adapter.StarTechP
 
             if (string.IsNullOrWhiteSpace(node_id.Value))
             {
+                string id = IdCreator.CreateId("t_task_node_config", "node_id");
                 //add
-                p.Add(new SqlParameter("@node_id", "id" + new Random().Next(1000, 9999)));
+                p.Add(new SqlParameter("@node_id", id));
                 p.Add(new SqlParameter("@node_code", "cd" + new Random().Next(1000, 9999)));
                 p.Add(new SqlParameter("@task_id", task_id.Value));
 
@@ -91,7 +92,7 @@ public partial class AppModules_Member_MemberDetail : StarTech.Adapter.StarTechP
         }
         catch (Exception ex)
         {
-            ClientScript.RegisterStartupScript(this.GetType(), "close", "<script>alert('修改失败');</script>");
+            ClientScript.RegisterStartupScript(this.GetType(), "close", "<script>alert('提交失败');</script>");
         }
     }
 }

@@ -173,6 +173,7 @@
         for (var i = 0; i < ids.length; i++) {
             if (!$('#' + ids[i]).val()) {
                 $('#' + ids[i]).focus();
+                return false;
             }
         }
 

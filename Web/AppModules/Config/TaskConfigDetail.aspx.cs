@@ -21,13 +21,13 @@ public partial class AppModules_Member_MemberDetail : StarTech.Adapter.StarTechP
                 task_id.Value = KillSqlIn.Form_ReplaceByString(Request.QueryString["id"], 20);
                 if (task_id.Value == "")
                     return;
-                GetTask(task_id.Value);
+                GetInfo(task_id.Value);
             }
         }
         
     }
 
-    protected void GetTask(string id)
+    protected void GetInfo(string id)
     {
         string strSQL = "select * from t_task_config where task_id='" + id + "';";
         DataSet ds = ado.ExecuteSqlDataset(strSQL);
@@ -54,8 +54,9 @@ public partial class AppModules_Member_MemberDetail : StarTech.Adapter.StarTechP
 
             if (string.IsNullOrWhiteSpace(task_id.Value))
             {
+                string id = IdCreator.CreateId("t_task_config", "task_id");
                 //add
-                p.Add(new SqlParameter("@task_id", "id" + new Random().Next(1000, 9999)));
+                p.Add(new SqlParameter("@task_id", id));
                 p.Add(new SqlParameter("@task_code", "cd" + new Random().Next(1000, 9999)));
 
                 string sql = "insert into t_task_config(task_id,task_code,task_sn,task_name,task_para,remarks,if_use) values(@task_id,@task_code,@task_sn,@task_name,@task_para,@remarks,@if_use);";
@@ -82,7 +83,7 @@ public partial class AppModules_Member_MemberDetail : StarTech.Adapter.StarTechP
         }
         catch(Exception ex)
         {
-            ClientScript.RegisterStartupScript(this.GetType(), "close", "<script>alert('修改失败');</script>");
+            ClientScript.RegisterStartupScript(this.GetType(), "close", "<script>alert('提交失败');</script>");
         }
     }
 }
