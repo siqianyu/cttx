@@ -1,0 +1,72 @@
+.login-body{background: url(../img/login_bottom_bg.jpg) center bottom no-repeat #f2f2f2;background-size:100% auto;background-attachment: fixed;}
+
+.login-content{width:100%;margin-top:2.3rem;background: url(../img/login_bg.png) left top no-repeat;display: table;background-size:82.4% auto;}
+.login-content .login{display: table-cell;vertical-align: middle;}
+
+.login-item{width:84%;min-width:10rem;max-width:22rem;background: rgba(255,255,255,.6);border-radius:1.5rem;height:2.4rem;padding:.2rem;display: inline-block;margin:.2rem auto;box-sizing:content-box;overflow:hidden;position: relative;}
+.login-item span{width:calc(100% - 4px);height: 2.2rem;border:.1rem solid #c8c8c8;border-radius:1.2rem;float:left;display: flex;background: #fff;}
+
+.login-item span i{width:1.8rem;float:left;margin:.2rem .4rem 0 .5rem;height:1.8rem;}
+.login-item span input{flex: 1;border:none;height:2.2rem;line-height: 2.2rem;color:#808080;background: transparent;font-size: .8rem;}
+.login-cell span i{background: url(../img/login_icon.png) left top no-repeat;background-size:cover}
+.login-password span i{background: url(../img/login_icon.png) left bottom no-repeat;background-size:cover}
+
+.login-item button{transition: .2s all;}
+.login-item .login-btn{width:100%;height: 2.4rem;border:none;line-height: 2.4rem;color:#fff;font-size: .8rem;border-radius:1.2rem;
+     background: -webkit-gradient(linear, 0 0, 0 100%, from(#fdc530), to(#ff9101));
+     background: -webkit-linear-gradient(#fdc530, #ff9101);
+     background: -moz-linear-gradient(#fdc530, #ff9101);
+     background: -o-linear-gradient(#fdc530, #ff9101);
+     background: linear-gradient(#fdc530, #ff9101); }
+.login-item .getcode{position: absolute;height:1.8rem;line-height: 1.9rem;background: #56b1ea;color:#fff;padding:0 1rem;border-radius:1.2rem;right:.5rem;top:.5rem;font-size: .65rem;border:none}
+.login-item .getcodeA{opacity: .6 !important}
+.login-item .register-btn,.login-item .register-btn:visited{width:100%;height: 2.4rem;border:2px dashed #fe9f0e;line-height: 2.4rem;color:#fff;font-size: .8rem;border-radius:1.2rem;background: #fff;color:#fe9f0e }
+.login-item .login-btn:hover{background: #ff9101;}
+/*.login-item .register-btn:hover{background: #fe9f0e;color:#fff}*/
+ 
+.login-role{width:84%;min-width:10rem;max-width:22rem;padding:.2rem;display: inline-block;overflow:hidden;}
+
+.disclaimer{width:100%;margin-top:2rem;font-size: .7rem;color:#808080;text-decoration: underline;margin-top:5rem;float:left} 
+.disclaimer:hover{color:#56b1ea}
+
+/*个人信息*/
+
+.icon-bar{width:100%;background: url(../img/icon_bg.jpg) center no-repeat;background-size:cover;height:10rem;position: relative;}
+.icon-box{position: absolute;width:6rem;height:6rem;border:#ffe8b0 .4rem solid;left:50%;top:50%;margin:-3.5rem 0 0 -3.2rem;border-radius:100%;background: url(../img/no_icon.png) center no-repeat #fff;background-size:56%}
+.icon-box input[type=button]{position: absolute;width:100%;height:6rem;border:#ffe8b0 .4rem solid;opacity:0}
+
+.personal{width:100%;background: #fff;}
+.personal-item{width:94%;padding:.5rem 3%;height:1.5rem;border-bottom: 1px solid #dcdcdc;display: flex;float:left;font-size: .8rem;position: relative;}
+.personal-item b,.career-content .career-item b{color:#1a1a1a;font-weight:normal;float:left;line-height: 1.5rem;}
+.personal-item span,.career-content .career-item span{flex: 1;float:right;text-align: right;color:#7f7f7f;margin-left:1.5rem}
+.personal-item span input,.career-content .career-item span input{border:none;text-align: right;width:100%;height: 1.5rem;line-height: 1.5rem;color:#7f7f7f;cursor:pointer}
+.personal-item span input[type=date]{width:6em;height: 1.5rem;line-height: 1.5rem;color:#7f7f7f;background:#fff;float:right;}
+.personal-item a{position: absolute;right:3%;top:.8rem;width:1.5rem;height: 1rem;background: url(../img/arrow_right.png) center no-repeat;background:auto 100%}
+
+/*职位信息*/
+
+.career-content{width:90%;margin:5% 5% 0 5%;background: #fff;border-radius:6px;font-size: .75rem;float:left;}
+.career-content .career-item{width:92%;border-bottom:1px solid #e7e7e7;padding:.5rem 4%;height: 1.5rem;line-height: 1.5rem;display: flex;}
+
+/*我的画像*/
+
+.personTag{width:94%;padding:1rem 3%;}
+.tag-icon{width:100%;padding:1rem 0;}
+.tag-icon div{width:6rem;margin:0 auto;border-radius: 100%;overflow:hidden;height:6rem;background: #fff;0}
+.tag-icon img{height:6rem;}
+.tag-icon span{width:12rem;display: inline-block;font-size: .8rem;color:#333;}
+
+.tag-box{width:100%;float:left;} 
+.tag-btn{font-size: .75rem;padding:0 5%;line-height: 1.8rem;border-radius:1.2rem;border:3px solid;min-width:5rem;margin:.2rem 3%;display: inline-block;background: #fff;}
+.tag-btn .tag-name{float:left;color:#4d4d4d}
+.tag-btn .tag-num{float:right;color:#fe7d14}
+
+.tag-btn.less{border-color:#e0e0e0}
+.tag-btn.middle{border-color:#c6ddea}
+.tag-btn.more{border-color:#cde8de}
+.tag-btn.most{border-color:#f3d0d0}
+
+.prev-icon{width:100%;height: 100%;position: fixed;top:0;left:0;background: rgba(0,0,0,.6);display: none;z-index:99999}
+.prev-icon div{display: table;width:100%;height:100%;}
+.prev-icon div p{display: table-cell;vertical-align: middle;}
+.prev-icon div p img{max-width:100%;max-height:100%}

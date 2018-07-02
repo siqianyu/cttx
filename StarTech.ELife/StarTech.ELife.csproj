@@ -39,11 +39,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="StarTech.DBUtility">
       <HintPath>..\Web\Bin\StarTech.DBUtility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -76,6 +81,9 @@
     <Compile Include="Base\MarketDal.cs" />
     <Compile Include="Base\MarketModel.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Flag\FlagBll.cs" />
+    <Compile Include="Flag\FlagDal.cs" />
+    <Compile Include="Flag\FlagModel.cs" />
     <Compile Include="Goods\MorePropertyConfigSetBll.cs" />
     <Compile Include="Goods\MorePropertyConfigSetDal.cs" />
     <Compile Include="Goods\GoodsBll.cs" />
@@ -92,6 +100,9 @@
     <Compile Include="Goods\ShopGoodsDal.cs" />
     <Compile Include="Goods\ShopGoodsModel.cs" />
     <Compile Include="IdCreator.cs" />
+    <Compile Include="Job\JobBll.cs" />
+    <Compile Include="Job\JobDal.cs" />
+    <Compile Include="Job\JobModel.cs" />
     <Compile Include="Menu\MenuTypeBll.cs" />
     <Compile Include="Menu\MenuTypeDal.cs" />
     <Compile Include="Menu\MenuTypeModel.cs" />
@@ -114,6 +125,21 @@
     <Compile Include="Question\ModelTestday.cs" />
     <Compile Include="Question\ModelTestQueston.cs" />
     <Compile Include="Question\ModelTestQuestonAnswer.cs" />
+    <Compile Include="ShortMsg\AliSms\AliSms.cs" />
+    <Compile Include="ShortMsg\AliSms\AliTemplate.cs" />
+    <Compile Include="ShortMsg\AliSms\AliTools.cs" />
+    <Compile Include="ShortMsg\ShortMsgBll.cs" />
+    <Compile Include="ShortMsg\ShortMsgDal.cs" />
+    <Compile Include="ShortMsg\ShortMsgModel.cs" />
+    <Compile Include="ShortMsg\ShortMsgModelExtensions.cs" />
+    <Compile Include="ShortMsg\ShortMsgSupBll.cs" />
+    <Compile Include="ShortMsg\ShortMsgSupDal.cs" />
+    <Compile Include="ShortMsg\ShortMsgSupModel.cs" />
+    <Compile Include="ShortMsg\ShortMsgTempBll.cs" />
+    <Compile Include="ShortMsg\ShortMsgTempDal.cs" />
+    <Compile Include="ShortMsg\ShortMsgTempModel.cs" />
+    <Compile Include="ShortMsg\YunPianSms\YunPianSms.cs" />
+    <Compile Include="ShortMsg\YunPianSms\YunPianTools.cs" />
     <Compile Include="ZXTS\TsBll.cs" />
     <Compile Include="ZXTS\TsDal.cs" />
     <Compile Include="ZXTS\TsModel.cs" />
