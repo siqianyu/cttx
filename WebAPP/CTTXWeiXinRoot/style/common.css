@@ -1,0 +1,36 @@
+*{margin:0;padding: 0;}
+html{font-family:'微软雅黑';font-size:20px;}
+body{background:#f2f2f2;color:#666;text-align:center;margin:0 auto;overflow-x: hidden;width:100%}
+button,input,select,textarea{font-family:'微软雅黑';outline:none;-webkit-appearance: none}
+a{text-decoration:none}
+img{border:none}
+li{list-style:none}
+i{font-style: normal;} 
+.left{float:left}
+.right{float:right}
+
+.header{width:100%;position: fixed;left:0;top:0; height:2.3rem;position: relative;z-index:999;
+     background: -webkit-gradient(linear, 0 0, 0 100%, from(#fdc530), to(#ff9000));
+     background: -webkit-linear-gradient(#fdc530, #ff9000);
+     background: -moz-linear-gradient(#fdc530, #ff9000);
+     background: -o-linear-gradient(#fdc530, #ff9000);
+     background: linear-gradient(#fdc530, #ff9000);   }
+.header span{font-size:.9rem;width:100%;line-height:2.3rem;float:left;color:#fff}
+.header img{position: absolute;left:.5rem;top:.5rem;width:1.3rem}
+.header img:hover{opacity: .8;}
+
+/*自定义radio样式*/
+
+.radio-check{position: relative;font-size: .7rem;color:#4c4c4c;height:1.5rem;line-height: 1.5rem;display: inline-block;}
+.radio-check i{width:1rem;height:1rem;margin-right:.5rem;float:left;background: url(../img/radio.png) center bottom no-repeat;background-size: 1rem auto;margin-top:.2rem}	
+.radio-check i.checked{background: url(../img/radio.png) center top no-repeat;background-size: 1rem auto;}
+.radio-check input{opacity:0;position: absolute;left:0;top:0;height:1.5rem;width:1rem}
+
+.radio-blue{position: relative;font-size: .7rem;color:#7f7f7f;height:1.5rem;line-height: 1.5rem;display: inline-block;}
+.radio-blue i{width:1rem;height:1rem;margin-right:.5rem;float:left;background: url(../img/radio_blue.png) center bottom no-repeat;background-size: 1rem auto;margin-top:.2rem}	
+.radio-blue i.checked{background: url(../img/radio_blue.png) center top no-repeat;background-size: 1rem auto;}
+.radio-blue input{opacity:0;position: absolute;left:0;top:0;height:1.5rem;width:1rem}
+
+/*弹出提示框样式*/
+.cover{width:100%;height: 100%;position: fixed;top:0;left:0;background: transparent;display: none;z-index:99999}
+.alert{background: rgba(0,0,0,.75);width:80%;left:10%;border-radius: 6px;font-size: .7rem;color:#fff;padding:1.5em 0;position: absolute;top:50%;margin-top:-2rem}
